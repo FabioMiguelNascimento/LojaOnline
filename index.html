@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/categorias.css">
+    <link rel="stylesheet" href="./css/chamativo.css">
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">Loja Online</h1>
+        <nav>
+            <div class="menuMobile" aria-expanded="false"></div>
+            <ul id="nav-ul">
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="produtos.php">Produtos</a></li>
+                <li><a href="contato.php">Contato</a></li>
+                <li><a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="banner">
+            <div class="carrossel">
+                <div class="carrossel-interno">
+                    <div class="carrossel-item ativo">
+                        <img src="./assets/banner1.jpg" alt="Imagem 1">
+                    </div>
+                    <div class="carrossel-item">
+                        <img src="./assets/banner2.jpg" alt="Imagem 2">
+                    </div>
+                    <div class="carrossel-item">
+                        <img src="./assets/banner3.jpg" alt="Imagem 3">
+                    </div>
+                </div>
+                <button class="controle-carrossel anterior" onclick="slideAnterior()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="controle-carrossel proximo" onclick="slideProximo()">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="indicadores">
+                <span class="indicador" onclick="mudarSlide(0)"></span>
+                <span class="indicador" onclick="mudarSlide(1)"></span>
+                <span class="indicador" onclick="mudarSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="categorias-container">
+            <div class="categoria-interno">
+                <div class="categoria-item">
+                    <img src="./icons/ico-eletro.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Eletrônicos</h2>
+                </div>
+                <div class="categoria-item">
+                    <img src="./icons/ico-casa.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Casa</h2>
+                </div>
+                <div class="categoria-item">
+                    <img src="./icons/ico-banheiro.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Banheiro</h2>
+                </div>
+                <div class="categoria-item">
+                    <img src="./icons/ico-escritorio.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Escritorio</h2>
+                </div>
+                <div class="categoria-item">
+                    <img src="./icons/ico-jardim.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Jardim</h2>
+                </div>
+                <div class="categoria-item">
+                    <img src="./icons/ico-cozinha.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Cozinha</h2>
+                </div>
+                <div class="categoria-item">
+                    <img src="./icons/ico-ferramentas.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Ferramentas</h2>
+                </div>
+                <div class="categoria-item">
+                    <img src="./icons/ico-roupas.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Roupas</h2>
+                </div>
+                <div class="categoria-item">
+                    <img src="./icons/ico-decoracao.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Decoracao</h2>
+                </div>
+                <div class="categoria-item">
+                    <img src="./icons/ico-decoracao.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Automotivo</h2>
+                </div>
+                <div class="categoria-item">
+                    <img src="./icons/ico-decoracao.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Games</h2>
+                </div>
+                <div class="categoria-item">
+                    <img src="./icons/ico-decoracao.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Brinquedos</h2>
+                </div>
+                <div class="categoria-item">
+                    <img src="./icons/ico-decoracao.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Praia</h2>
+                </div>
+            </div>
+            <button class="controle-categorias anterior">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="controle-categorias proximo">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section>
+        <div class="chamativo-container">
+            <div class="chamativo-interno">
+                <div class="chamativo-item c1">
+                    <img src="./assets/chamativo1.jpg">
+                    <button class="chamativo-item-botao">Saiba Mais</button>
+                </div>
+                <div class="chamativo-item c2">
+                    <img src="./assets/chamativo2.jpg">
+                    <button class="chamativo-item-botao">Saiba Mais</button>
+                </div>
+                <div class="chamativo-item c3">
+                    <img src="./assets/chamativo3.jpg">
+                    <button class="chamativo-item-botao">Saiba Mais</button>
+                </div>
+                <div class="chamativo-item c4">
+                    <img src="./assets/chamativo4.jpg">
+                    <button class="chamativo-item-botao">Saiba Mais</button>
+                </div>
+                <div class="chamativo-item c5">
+                    <img src="./assets/chamativo5.jpg">
+                    <button class="chamativo-item-botao">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-interno">
+                <div class="footer-item">
+                    <h2 class="footer-item-titulo">Loja Online</h2>
+                    <p class="footer-item-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
+                        ultricies velit. Nullam ac libero at nisi ultricies tincidunt. Integer ac lacinia nisi.
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h2 class="footer-item-titulo">Links</h2>
+                    <ul class="footer-item-lista">
+                        <li><a href="index.php">Inicio</a></li>
+                        <li><a href="produtos.php">Produtos</a></li>
+                        <li><a href="contato.php">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h2 class="footer-item-titulo">Contato</h2>
+                    <ul class="footer-item-lista">
+                        <li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/categoria.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="./js/header.js"></script>
+</body>
+
+</html>

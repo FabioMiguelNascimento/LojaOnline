@@ -1,0 +1,113 @@
+.chamativo-container {
+    width: 80%;
+    height: fit-content;
+    margin: 10px auto ;
+}
+
+.chamativo-interno {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    grid-template-areas:
+        "c1 c1 c2 c3"
+        "c4 c5 c5 c3";
+    gap: 1rem;
+}
+
+.chamativo-item {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.chamativo-item button{
+    position: absolute;
+    color: #fff;
+    background: salmon;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 300ms;
+    &:hover{
+        background: tomato;
+        scale: 1.1;
+    }
+}
+
+
+
+
+
+.chamativo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c1 {
+    grid-area: c1;
+    background-color: #f00;
+}
+
+.c2 {
+    grid-area: c2;
+    background-color: #0f0;
+}
+
+.c3 {
+    grid-area: c3;
+    background-color: #00f;
+    grid-row: span 2;
+}
+
+.c4 {
+    grid-area: c4;
+    background-color: #ff0;
+}
+
+.c5 {
+    grid-area: c5;
+    background-color: #f0f;
+}
+
+@media (max-width: 1200px) {
+    .chamativo-interno {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 200px);
+        grid-template-areas:
+            "c1 c1 c1"
+            "c2 c2 c3"
+            "c4 c4 c3"
+            "c5 c5 c5";
+    }
+
+    .c3 {
+        grid-area: c3;
+        background-color: #00f;
+    }   
+}
+
+@media (max-width: 630px) {
+    .chamativo-interno {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 200px);
+        grid-template-areas:
+            "c1 c1"
+            "c2 c2"
+            "c3 c3"
+            "c4 c4"
+            "c5 c5";
+    }
+
+    .c3 {
+        grid-area: c3;
+        background-color: #00f;
+    }   
+}
