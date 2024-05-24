@@ -1,0 +1,92 @@
+.banner {
+    position: relative;
+    width: 80%;
+    height: 30vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrossel {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.carrossel-interno {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    height: 100%;
+    transition: transform 0.2s ease;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 10px;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.carrossel-item {
+    scroll-snap-align: start;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carrossel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.controle-carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    aspect-ratio: 1;
+    color: black;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.controle-carrossel.anterior {
+    left: 10px;
+}
+
+.controle-carrossel.proximo {
+    right: 10px;
+}
+
+.controle-carrossel:hover {
+    background: var(--azul-claro);
+    color: white;
+}
+
+.indicadores {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicador {
+    width: 10px;
+    aspect-ratio: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicador.ativo {
+    background-color: var(--azul-claro);
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 30vh;
+        width: 100%;
+    }
+}
