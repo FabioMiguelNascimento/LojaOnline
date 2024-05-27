@@ -1,5 +1,5 @@
 # Loja Online
-Veja o projeto no seu navegador [LINK]([url](https://f4bi0zin.github.io/LojaOnline/))
+Veja o projeto no seu navegador https://f4bi0zin.github.io/LojaOnline/
 
 Este é um projeto simples de uma loja online desenvolvido para demonstrar habilidades em HTML e CSS. O objetivo principal é mostrar o layout responsivo e a organização de elementos em uma página de comércio eletrônico.
 
