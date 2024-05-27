@@ -2,34 +2,49 @@ document.addEventListener('DOMContentLoaded', function () {
     const anteriorButton = document.querySelector('.controle-carrossel.anterior');
     const proximoButton = document.querySelector('.controle-carrossel.proximo');
     const carrosselInterno = document.querySelector('.carrossel-interno');
+    const indicadores = document.querySelectorAll('.indicador');
+    const totalSlides = document.querySelectorAll('.carrossel-item').length;
+
+    updateIndicators();
+    function updateIndicators() {
+        const scrollPosition = carrosselInterno.scrollLeft;
+        const activeIndex = Math.round(scrollPosition / carrosselInterno.offsetWidth);
+
+        indicadores.forEach((indicador, index) => {
+            indicador.classList.toggle('ativo', index === activeIndex);
+        });
+
+        anteriorButton.style.visibility = activeIndex === 0 ? 'hidden' : 'visible';
+        proximoButton.style.visibility = activeIndex === totalSlides - 1 ? 'hidden' : 'visible';
+    }
 
     anteriorButton.addEventListener('click', () => {
-        const primeiroSlide = 0;
-        const ultimoSlide = carrosselInterno.scrollWidth - carrosselInterno.clientWidth;
-        if (carrosselInterno.scrollLeft === primeiroSlide) {
-            carrosselInterno.scrollLeft = ultimoSlide;
-        } else {
-            carrosselInterno.scrollLeft -= carrosselInterno.clientWidth;
-        }
-    });
-    
-    proximoButton.addEventListener('click', () => {
-        const primeiroSlide = 0;
-        const ultimoSlide = carrosselInterno.scrollWidth - carrosselInterno.clientWidth;
-        if (carrosselInterno.scrollLeft === ultimoSlide) {
-            carrosselInterno.scrollLeft = primeiroSlide;
-        } else {
-            carrosselInterno.scrollLeft += carrosselInterno.clientWidth;
-        }
+        carrosselInterno.scrollLeft -= carrosselInterno.offsetWidth;
     });
 
+    proximoButton.addEventListener('click', () => {
+        carrosselInterno.scrollLeft += carrosselInterno.offsetWidth;
+    });
+
+    indicadores.forEach((indicador, index) => {
+        indicador.addEventListener('click', () => {
+            carrosselInterno.scrollLeft = index * carrosselInterno.offsetWidth;
+        });
+    });
+
+    carrosselInterno.addEventListener('scroll', () => {
+        requestAnimationFrame(updateIndicators);
+    });
+
+    // Inicialização dos indicadores e botões
+
+    // Código existente de rolagem com o mouse
     let isDown = false;
     let startX;
     let scrollLeft;
     let velocity = 0;
     let animationFrame;
 
-    
     carrosselInterno.addEventListener('mousedown', (e) => {
         isDown = true;
         carrosselInterno.classList.add('active');
@@ -58,24 +73,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - carrosselInterno.offsetLeft;
-        const walk = (x - startX) * 7; // Ajuste a velocidade de rolagem conforme necessário
+        const walk = (x - startX) * 3; // Ajuste a velocidade de rolagem conforme necessário
         carrosselInterno.scrollLeft = scrollLeft - walk;
         velocity = walk; // Capture a velocidade do movimento
         cancelAnimationFrame(animationFrame);
         animationFrame = requestAnimationFrame(updateScroll);
-    
-        const primeiroSlide = 0;
-        const ultimoSlide = carrosselInterno.scrollWidth - carrosselInterno.clientWidth;
-    
-        if (carrosselInterno.scrollLeft === primeiroSlide && walk > 0) {
-            carrosselInterno.scrollLeft = ultimoSlide;
-            startX = e.pageX - carrosselInterno.offsetLeft + ultimoSlide;
-        } else if (carrosselInterno.scrollLeft === ultimoSlide && walk < 0) {
-            carrosselInterno.scrollLeft = primeiroSlide;
-            startX = e.pageX - carrosselInterno.offsetLeft - ultimoSlide;
-        }
     });
-    
+
     function updateScroll() {
         if (isDown) return;
         carrosselInterno.scrollLeft -= velocity;

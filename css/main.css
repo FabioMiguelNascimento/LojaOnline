@@ -7,11 +7,9 @@ body,
     font-family: 'Roboto', sans-serif;
 }
 
-html{
-    /* color-scheme: dark light; */
-}
 body {
-    height: 100vh;
+    height: 200vh;
+    background-color: #c2c2c246;
 }
 
 a {

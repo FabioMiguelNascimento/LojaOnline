@@ -80,7 +80,7 @@
 @media (max-width: 1200px) {
     .chamativo-interno {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 200px);
+        grid-template-rows: repeat(4, 200px);
         grid-template-areas:
             "c1 c1 c1"
             "c2 c2 c3"
