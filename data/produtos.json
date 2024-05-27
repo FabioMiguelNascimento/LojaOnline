@@ -1,0 +1,106 @@
+{
+  "listas": [
+    [
+      {
+        "imagem": "./assets/produtos/produtos-acessorios-guardachuva-3.jpg",
+        "titulo": "Guarda-Chuva Dobrável",
+        "descricao": "Compacto e resistente, perfeito para qualquer clima.",
+        "estrelas": 5,
+        "preco": "R$ 80,00"
+      },
+      {
+        "imagem": "./assets/produtos/produtos-acessorios-relogio-6.jpg",
+        "titulo": "Relógio Clássico",
+        "descricao": "Estilo e elegância em um único acessório.",
+        "estrelas": 3,
+        "preco": "R$ 250,00"
+      },
+      {
+        "imagem": "./assets/produtos/produtos-moveis-cadeiras-1.png",
+        "titulo": "Cadeira de Escritório",
+        "descricao": "Conforto e ergonomia para seu ambiente de trabalho.",
+        "estrelas": 5,
+        "preco": "R$ 350,00"
+      },
+      {
+        "imagem": "./assets/produtos/produtos-utensilios-panelaArroz-4.jpg",
+        "titulo": "Panela de Arroz",
+        "descricao": "Prepara o arroz perfeito para suas refeições.",
+        "estrelas": 4,
+        "preco": "R$ 1.200,00"
+      },
+      {
+        "imagem": "./assets/produtos/produtos-moveis-sofa-2.jpg",
+        "titulo": "Sofá Retrátil",
+        "descricao": "Conforto e praticidade para sua sala de estar.",
+        "estrelas": 5,
+        "preco": "R$ 1.500,00"
+      },
+      {
+        "imagem": "./assets/produtos/produtos-tecnologia-telefone-8.jpg",
+        "titulo": "Iphone 12",
+        "descricao": "Velocidade e praticidade na palma da sua mão.",
+        "estrelas": 4,
+        "preco": "R$ 450,00"
+      },
+      {
+        "imagem": "./assets/produtos/produtos-utensilios-liquidificador-3.jpg",
+        "titulo": "Liquidificador",
+        "descricao": "Conforto e qualidade para suas noites de sono.",
+        "estrelas": 5,
+        "preco": "R$ 1.000,00"
+      }
+    ],
+    [
+      {
+        "imagem": "./assets/produtos/produtos-tecnologia-camera-3.jpg",
+        "titulo": "Câmera DSLR",
+        "descricao": "Capture momentos com qualidade profissional.",
+        "estrelas": 5,
+        "preco": "R$ 2.500,00"
+      },
+      {
+        "imagem": "./assets/produtos/produtos-cosmeticos-oleos-4.jpg",
+        "titulo": "Óleo de Argan",
+        "descricao": "Nutrição intensa para cabelos e pele.",
+        "estrelas": 5,
+        "preco": "R$ 90,00"
+      },
+      {
+        "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+        "titulo": "Conjunto de Louças",
+        "descricao": "Elegância e praticidade para suas refeições.",
+        "estrelas": 5,
+        "preco": "R$ 180,00"
+      },
+      {
+        "imagem": "./assets/produtos/produtos-tecnologia-headfone-1.jpg",
+        "titulo": "Headfone Bluetooth",
+        "descricao": "Qualidade sonora e conforto para seu dia a dia.",
+        "estrelas": 4,
+        "preco": "R$ 350,00"
+      },
+      {
+        "imagem": "./assets/produtos/produtos-utensilios-balanca-2.jpg",
+        "titulo": "Balança Digital",
+        "descricao": "Precisão e praticidade para suas receitas.",
+        "estrelas": 5,
+        "preco": "R$ 50,00"
+      },
+      {
+        "imagem": "./assets/produtos/produtos-roupas-vestidos-1.jpg",
+        "titulo": "Vestido Estampado",
+        "descricao": "Estilo e conforto para diversas ocasiões.",
+        "estrelas": 5,
+        "preco": "R$ 100,00"
+      },
+      {
+        "imagem": "./assets/produtos/produtos-tecnologia-microfone-2.jpg",
+        "titulo": "Microfone Profissional",
+        "descricao": "Qualidade sonora para suas gravações e apresentações.",
+        "estrelas": 5,
+        "preco": "R$ 300,00"
+      }
+    ]
+  ]
+}

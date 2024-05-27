@@ -50,23 +50,23 @@
     font-size: 1.5rem;
     margin-bottom: .5rem;
     cursor: pointer;
-    text-decoration: var(--verde-cha) underline wavy;
+    text-decoration: var(--azul-forte ) underline wavy;
     transition: 300ms;
 }
 
 .produto-item > img:hover ~ .produto-item-titulo {
-    color: var(--verde-cha);
-    text-decoration: underline wavy var(--verde-cha) .1rem;
+    color: var(--azul-forte );
+    text-decoration: underline wavy var(--azul-forte ) .1rem;
     transform: scale(1.005);
 }
 
 .produto-item-titulo:hover {
-    color: var(--verde-cha);
-    text-decoration: var(--verde-cha) underline wavy .1rem;
+    color: var(--azul-forte);
+    text-decoration: var(--azul-forte) underline wavy .1rem;
     scale: 1.005;
 }
 .produto-item-estrelas {
-    color: var(--verde-cha);
+    color: var(--azul-forte);
 }
 
 .produto-item > img {
