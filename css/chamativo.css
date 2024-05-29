@@ -41,10 +41,6 @@
     }
 }
 
-
-
-
-
 .chamativo-item img {
     width: 100%;
     height: 100%;
@@ -53,28 +49,23 @@
 
 .c1 {
     grid-area: c1;
-    background-color: #f00;
 }
 
 .c2 {
     grid-area: c2;
-    background-color: #0f0;
 }
 
 .c3 {
     grid-area: c3;
-    background-color: #00f;
     grid-row: span 2;
 }
 
 .c4 {
     grid-area: c4;
-    background-color: #ff0;
 }
 
 .c5 {
     grid-area: c5;
-    background-color: #f0f;
 }
 
 @media (max-width: 1200px) {

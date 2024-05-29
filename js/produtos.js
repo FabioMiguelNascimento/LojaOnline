@@ -1,125 +1,51 @@
-document.addEventListener("DOMContentLoaded", function () {
-    function setupScroll(containerSelector, produtosData) {
-        const containers = document.querySelectorAll(containerSelector);
-
-        containers.forEach((container, index) => {
-            const interno = container.querySelector('.produtos-interno');
-            const anteriorButton = container.querySelector('.controle-produtos.anterior');
-            const proximoButton = container.querySelector('.controle-produtos.proximo');
-
-            if (!interno || !anteriorButton || !proximoButton) {
-                console.error('Elemento não encontrado dentro do container:', container);
-                return;
-            }
-
-            let itemWidth;
-            let gap;
-
-            produtosData.listas[index].forEach(produto => {
-                const produtoItem = document.createElement('div');
-                produtoItem.classList.add('produto-item');
-
-                const estrelasHtml = new Array(5).fill(0).map((_, index) => {
-                    return index < produto.estrelas ? '<i class="fas fa-star"></i>' : '<i class="far fa-star"></i>';
-                }).join('');
-
-                produtoItem.innerHTML = `
-                    <img src="${produto.imagem}" alt="${produto.titulo}">
-                    <h2 class="produto-item-titulo">${produto.titulo}</h2>
-                    <p class="produto-item-descricao">${produto.descricao}</p>
-                    <div class="produto-item-estrelas">
-                        ${estrelasHtml}
-                    </div>
-                    <p class="produto-item-preco">${produto.preco}</p>
-                `;
-
-                interno.appendChild(produtoItem);
-
-                itemWidth = produtoItem.clientWidth;
-                gap = parseInt(getComputedStyle(interno).gap);
-            });
-
-            anteriorButton.addEventListener('click', function () {
-                interno.scrollBy({
-                    left: -(itemWidth + gap),
-                    behavior: 'smooth'
-                });
-            });
-
-            proximoButton.addEventListener('click', function () {
-                interno.scrollBy({
-                    left: itemWidth + gap,
-                    behavior: 'smooth'
-                });
-            });
-
-            let isDown = false;
-            let startX;
-            let scrollLeft;
-            let velocity = 0;
-            let animationFrame;
-
-            interno.addEventListener('mousedown', (e) => {
-                isDown = true;
-                interno.classList.add('active');
-                startX = e.pageX - interno.offsetLeft;
-                scrollLeft = interno.scrollLeft;
-                interno.style.cursor = 'grabbing';
-                e.preventDefault();
-            });
-
-            interno.addEventListener('mouseleave', () => {
-                isDown = false;
-                interno.classList.remove('active');
-                interno.style.cursor = 'grab';
-                cancelAnimationFrame(animationFrame);
-            });
-
-            interno.addEventListener('mouseup', () => {
-                isDown = false;
-                interno.classList.remove('active');
-                interno.style.cursor = 'grab';
-                cancelAnimationFrame(animationFrame);
-                smoothScroll();
-            });
-
-            interno.addEventListener('mousemove', (e) => {
-                if (!isDown) return;
-                e.preventDefault();
-                const x = e.pageX - interno.offsetLeft;
-                const walk = (x - startX) * 1.5;
-                interno.scrollLeft = scrollLeft - walk;
-                velocity = walk;
-                cancelAnimationFrame(animationFrame);
-                animationFrame = requestAnimationFrame(updateScroll);
-            });
-
-            function updateScroll() {
-                if (isDown) return;
-                interno.scrollLeft -= velocity;
-                velocity *= 0.95;
-                if (Math.abs(velocity) > 0.5) {
-                    animationFrame = requestAnimationFrame(updateScroll);
-                }
-            }
-
-            function smoothScroll() {
-                if (Math.abs(velocity) < 0.5) return;
-                interno.scrollLeft -= velocity;
-                velocity *= 0.95;
-                animationFrame = requestAnimationFrame(smoothScroll);
-            }
-
-            interno.addEventListener('dragstart', (e) => {
-                e.preventDefault();
-            });
-        });
-    }
-
+document.addEventListener("DOMContentLoaded", function() {
+    // Carregar dados do JSON
     fetch('./data/produtos.json')
         .then(response => response.json())
-        .then(produtosData => {
-            setupScroll('.produtos-container', produtosData);
+        .then(data => {
+            const produtos = data.listas[0].produtos;
+            console.log('Produtos carregados:', produtos);
+
+            // Função para embaralhar produtos aleatoriamente
+            function shuffle(array) {
+                let currentIndex = array.length, temporaryValue, randomIndex;
+                while (currentIndex !== 0) {
+                    randomIndex = Math.floor(Math.random() * currentIndex);
+                    currentIndex--;
+                    temporaryValue = array[currentIndex];
+                    array[currentIndex] = array[randomIndex];
+                    array[randomIndex] = temporaryValue;
+                }
+                return array;
+            }
+
+            // Função para preencher uma lista com 12 produtos aleatórios filtrados por tag
+            function preencherListaComProdutos(container, produtosLista, tag) {
+                const produtosFiltrados = tag ? produtosLista.filter(produto => produto.tags.includes(tag)) : produtosLista;
+                const produtosAleatorios = shuffle(produtosFiltrados).slice(0, 12); // Selecionar 12 produtos aleatórios
+                produtosAleatorios.forEach(produto => {
+                    const produtoHTML = `
+                        <div class="produto-item">
+                            <img src="${produto.imagem}" alt="${produto.titulo}">
+                            <h2 class="produto-item-titulo">${produto.titulo}</h2>
+                            <p class="produto-item-descricao">${produto.descricao}</p>
+                            <div class="produto-item-estrelas">
+                                ${'★'.repeat(produto.estrelas)}
+                            </div>
+                            <p class="produto-item-preco">${produto.preco}</p>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', produtoHTML);
+                });
+                console.log(`Produtos adicionados à lista: ${container.className}`);
+            }
+
+            // Selecionar todas as listas e preenchê-las com produtos
+            document.querySelectorAll('.produtos-interno.lista').forEach(lista => {
+                const tag = lista.getAttribute('data-tag');
+                console.log(`Preenchendo lista: ${lista.className} com tag: ${tag}`);
+                preencherListaComProdutos(lista, produtos, tag);
+            });
         })
-        .catch(error => console.error('Erro ao carregar dados JSON:', error));
+        .catch(error => console.error('Erro ao carregar os dados do JSON:', error));
 });

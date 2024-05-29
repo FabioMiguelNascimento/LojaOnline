@@ -1,23 +1,15 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#0985E3">
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
     <g id="SVGRepo_iconCarrier">
-        <rect width="48" height="48" fill="none" fill-opacity="0.01" />
-        <path d="M37 21V37M11 37V44H37V37M11 37H4V10L18 4H30L44 10V37H37M11 37V21" stroke="#000000" stroke-width="4"
-            stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M30 4L24 18M24 18L18 4M24 18V37V44" stroke="#000000" stroke-width="4" stroke-linecap="round"
-            stroke-linejoin="round" />
-        <path d="M30 4L24 18" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M24 18L18 4" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M18 4L14 12L18 17.5L16 23L24 37" stroke="#000000" stroke-width="4" stroke-linecap="round"
-            stroke-linejoin="round" />
-        <path d="M30 4L35 12L30 17.5L32 23L24 37" stroke="#000000" stroke-width="4" stroke-linecap="round"
-            stroke-linejoin="round" />
+        <title>clothes-solid</title>
+        <g id="Layer_2" data-name="Layer 2">
+            <g id="invisible_box" data-name="invisible box">
+                <rect width="48" height="48" fill="none"></rect>
+            </g>
+            <g id="icons_Q2" data-name="icons Q2">
+                <path d="M40.7,20.4l-4-3.9V43H11.3V16.5l-4,3.9L1,14.1,9.2,5H19A5.2,5.2,0,0,0,29,5h9.8L47,14.1Z"></path>
+            </g>
+        </g>
     </g>
-
 </svg>

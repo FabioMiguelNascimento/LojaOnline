@@ -1,106 +1,494 @@
 {
-  "listas": [
-    [
-      {
-        "imagem": "./assets/produtos/produtos-acessorios-guardachuva-3.jpg",
-        "titulo": "Guarda-Chuva Dobrável",
-        "descricao": "Compacto e resistente, perfeito para qualquer clima.",
-        "estrelas": 5,
-        "preco": "R$ 80,00"
-      },
-      {
-        "imagem": "./assets/produtos/produtos-acessorios-relogio-6.jpg",
-        "titulo": "Relógio Clássico",
-        "descricao": "Estilo e elegância em um único acessório.",
-        "estrelas": 3,
-        "preco": "R$ 250,00"
-      },
-      {
-        "imagem": "./assets/produtos/produtos-moveis-cadeiras-1.png",
-        "titulo": "Cadeira de Escritório",
-        "descricao": "Conforto e ergonomia para seu ambiente de trabalho.",
-        "estrelas": 5,
-        "preco": "R$ 350,00"
-      },
-      {
-        "imagem": "./assets/produtos/produtos-utensilios-panelaArroz-4.jpg",
-        "titulo": "Panela de Arroz",
-        "descricao": "Prepara o arroz perfeito para suas refeições.",
-        "estrelas": 4,
-        "preco": "R$ 1.200,00"
-      },
-      {
-        "imagem": "./assets/produtos/produtos-moveis-sofa-2.jpg",
-        "titulo": "Sofá Retrátil",
-        "descricao": "Conforto e praticidade para sua sala de estar.",
-        "estrelas": 5,
-        "preco": "R$ 1.500,00"
-      },
-      {
-        "imagem": "./assets/produtos/produtos-tecnologia-telefone-8.jpg",
-        "titulo": "Iphone 12",
-        "descricao": "Velocidade e praticidade na palma da sua mão.",
-        "estrelas": 4,
-        "preco": "R$ 450,00"
-      },
-      {
-        "imagem": "./assets/produtos/produtos-utensilios-liquidificador-3.jpg",
-        "titulo": "Liquidificador",
-        "descricao": "Conforto e qualidade para suas noites de sono.",
-        "estrelas": 5,
-        "preco": "R$ 1.000,00"
-      }
-    ],
-    [
-      {
-        "imagem": "./assets/produtos/produtos-tecnologia-camera-3.jpg",
-        "titulo": "Câmera DSLR",
-        "descricao": "Capture momentos com qualidade profissional.",
-        "estrelas": 5,
-        "preco": "R$ 2.500,00"
-      },
-      {
-        "imagem": "./assets/produtos/produtos-cosmeticos-oleos-4.jpg",
-        "titulo": "Óleo de Argan",
-        "descricao": "Nutrição intensa para cabelos e pele.",
-        "estrelas": 5,
-        "preco": "R$ 90,00"
-      },
-      {
-        "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
-        "titulo": "Conjunto de Louças",
-        "descricao": "Elegância e praticidade para suas refeições.",
-        "estrelas": 5,
-        "preco": "R$ 180,00"
-      },
-      {
-        "imagem": "./assets/produtos/produtos-tecnologia-headfone-1.jpg",
-        "titulo": "Headfone Bluetooth",
-        "descricao": "Qualidade sonora e conforto para seu dia a dia.",
-        "estrelas": 4,
-        "preco": "R$ 350,00"
-      },
-      {
-        "imagem": "./assets/produtos/produtos-utensilios-balanca-2.jpg",
-        "titulo": "Balança Digital",
-        "descricao": "Precisão e praticidade para suas receitas.",
-        "estrelas": 5,
-        "preco": "R$ 50,00"
-      },
-      {
-        "imagem": "./assets/produtos/produtos-roupas-vestidos-1.jpg",
-        "titulo": "Vestido Estampado",
-        "descricao": "Estilo e conforto para diversas ocasiões.",
-        "estrelas": 5,
-        "preco": "R$ 100,00"
-      },
-      {
-        "imagem": "./assets/produtos/produtos-tecnologia-microfone-2.jpg",
-        "titulo": "Microfone Profissional",
-        "descricao": "Qualidade sonora para suas gravações e apresentações.",
-        "estrelas": 5,
-        "preco": "R$ 300,00"
-      }
+    "listas": [
+        {
+            "produtos": [
+                {
+                    "id": 1,
+                    "tags": [
+                        "acessorios",
+                        "aneis"
+                    ],
+                    "imagem": "./assets/produtos/produtos-acessorios-aneis-5.jpg",
+                    "titulo": "Anel de Prata",
+                    "descricao": "Anel de prata com detalhes finos.",
+                    "estrelas": 4,
+                    "preco": "R$ 50,00"
+                },
+                {
+                    "id": 2,
+                    "tags": [
+                        "acessorios",
+                        "chapeu",
+                        "novos"
+                    ],
+                    "imagem": "./assets/produtos/produtos-acessorios-chapeu-4.jpg",
+                    "titulo": "Chapéu de Veludo",
+                    "descricao": "Chapéu de veludo estiloso para o verão.",
+                    "estrelas": 5,
+                    "preco": "R$ 70,00"
+                },
+                {
+                    "id": 3,
+                    "tags": [
+                        "acessorios",
+                        "guardachuva",
+                        "best"
+                    ],
+                    "imagem": "./assets/produtos/produtos-acessorios-guardachuva-3.jpg",
+                    "titulo": "Guarda-Chuva Dobrável",
+                    "descricao": "Compacto e resistente, perfeito para qualquer clima.",
+                    "estrelas": 5,
+                    "preco": "R$ 80,00"
+                },
+                {
+                    "id": 4,
+                    "tags": [
+                        "acessorios",
+                        "oculos"
+                    ],
+                    "imagem": "./assets/produtos/produtos-acessorios-oculos-2.jpg",
+                    "titulo": "Óculos de Sol",
+                    "descricao": "Óculos de sol com proteção UV.",
+                    "estrelas": 4,
+                    "preco": "R$ 120,00"
+                },
+                {
+                    "id": 5,
+                    "tags": [
+                        "acessorios",
+                        "relogio",
+                        "novos"
+                    ],
+                    "imagem": "./assets/produtos/produtos-acessorios-relogio-1.jpg",
+                    "titulo": "Relógio de Pulso",
+                    "descricao": "Relógio de pulso com pulseira de couro.",
+                    "estrelas": 5,
+                    "preco": "R$ 80,00"
+                },
+                {
+                    "id": 6,
+                    "tags": [
+                        "acessorios",
+                        "relogio",
+                        "best"
+                    ],
+                    "imagem": "./assets/produtos/produtos-acessorios-relogio-6.jpg",
+                    "titulo": "Relógio Clássico",
+                    "descricao": "Relógio clássico com design elegante.",
+                    "estrelas": 4,
+                    "preco": "R$ 150,00"
+                },
+                {
+                    "id": 7,
+                    "tags": [
+                        "acessorios",
+                        "relogio",
+                        "novos"
+                    ],
+                    "imagem": "./assets/produtos/produtos-acessorios-relogio-7.jpg",
+                    "titulo": "Relógio Esportivo",
+                    "descricao": "Relógio esportivo resistente à água.",
+                    "estrelas": 5,
+                    "preco": "R$ 200,00"
+                },
+                {
+                    "id": 8,
+                    "tags": [
+                        "acessorios",
+                        "relogio"
+                    ],
+                    "imagem": "./assets/produtos/produtos-acessorios-relogio-8.jpg",
+                    "titulo": "Relógio Digital",
+                    "descricao": "Relógio digital com múltiplas funções.",
+                    "estrelas": 4,
+                    "preco": "R$ 100,00"
+                },
+                {
+                    "id": 9,
+                    "tags": [
+                        "cosmeticos",
+                        "batom"
+                    ],
+                    "imagem": "./assets/produtos/produtos-cosmeticos-batom-2.jpg",
+                    "titulo": "Batom Vermelho",
+                    "descricao": "Batom vermelho de longa duração.",
+                    "estrelas": 5,
+                    "preco": "R$ 30,00"
+                },
+                {
+                    "id": 10,
+                    "tags": [
+                        "cosmeticos",
+                        "lapis"
+                    ],
+                    "imagem": "./assets/produtos/produtos-cosmeticos-lapis-1.jpg",
+                    "titulo": "Lápis de Olho",
+                    "descricao": "Lápis de olho resistente à água.",
+                    "estrelas": 4,
+                    "preco": "R$ 20,00"
+                },
+                {
+                    "id": 11,
+                    "tags": [
+                        "cosmeticos",
+                        "oleo"
+                    ],
+                    "imagem": "./assets/produtos/produtos-cosmeticos-oleos-3.jpg",
+                    "titulo": "Óleo de Argan",
+                    "descricao": "Óleo de Argan para hidratação profunda.",
+                    "estrelas": 5,
+                    "preco": "R$ 90,00"
+                },
+                {
+                    "id": 12,
+                    "tags": [
+                        "cosmeticos",
+                        "oleo",
+                        "best"
+                    ],
+                    "imagem": "./assets/produtos/produtos-cosmeticos-oleos-4.jpg",
+                    "titulo": "Óleo Essencial",
+                    "descricao": "Óleo essencial de lavanda.",
+                    "estrelas": 4,
+                    "preco": "R$ 50,00"
+                },
+                {
+                    "id": 13,
+                    "tags": [
+                        "decoracao",
+                        "quadros"
+                    ],
+                    "imagem": "./assets/produtos/produtos-decoracao-quadros-1.jpg",
+                    "titulo": "Quadro Abstrato",
+                    "descricao": "Quadro abstrato para sala de estar.",
+                    "estrelas": 5,
+                    "preco": "R$ 200,00"
+                },
+                {
+                    "id": 14,
+                    "tags": [
+                        "decoracao",
+                        "quadros",
+                        "novos"
+                    ],
+                    "imagem": "./assets/produtos/produtos-decoracao-quadros-2.jpg",
+                    "titulo": "Quadro Floral",
+                    "descricao": "Quadro floral com moldura de madeira.",
+                    "estrelas": 4,
+                    "preco": "R$ 150,00"
+                },
+                {
+                    "id": 15,
+                    "tags": [
+                        "moveis",
+                        "aparador",
+                        "novos"
+                    ],
+                    "imagem": "./assets/produtos/produtos-moveis-aparador-4.jpg",
+                    "titulo": "Aparador de Madeira",
+                    "descricao": "Aparador de madeira com design rústico.",
+                    "estrelas": 5,
+                    "preco": "R$ 350,00"
+                },
+                {
+                    "id": 16,
+                    "tags": [
+                        "moveis",
+                        "cadeira",
+                        "best"
+                    ],
+                    "imagem": "./assets/produtos/produtos-moveis-cadeira-3.jpg",
+                    "titulo": "Cadeira de Escritório",
+                    "descricao": "Cadeira ergonômica para escritório.",
+                    "estrelas": 4,
+                    "preco": "R$ 450,00"
+                },
+                {
+                    "id": 17,
+                    "tags": [
+                        "moveis",
+                        "cadeira"
+                    ],
+                    "imagem": "./assets/produtos/produtos-moveis-cadeiras-1.png",
+                    "titulo": "Conjunto de Cadeiras",
+                    "descricao": "Conjunto de cadeiras para sala de jantar.",
+                    "estrelas": 5,
+                    "preco": "R$ 800,00"
+                },
+                {
+                    "id": 18,
+                    "tags": [
+                        "moveis",
+                        "sofa"
+                    ],
+                    "imagem": "./assets/produtos/produtos-moveis-sofa-2.jpg",
+                    "titulo": "Sofá Retrátil",
+                    "descricao": "Sofá retrátil com tecido de alta qualidade.",
+                    "estrelas": 5,
+                    "preco": "R$ 1.200,00"
+                },
+                {
+                    "id": 19,
+                    "tags": [
+                        "moveis",
+                        "sofa",
+                        "novos"
+                    ],
+                    "imagem": "./assets/produtos/produtos-moveis-sofa-5.jpg",
+                    "titulo": "Sofá de Canto",
+                    "descricao": "Sofá de canto com chaise.",
+                    "estrelas": 4,
+                    "preco": "R$ 1.500,00"
+                },
+                {
+                    "id": 20,
+                    "tags": [
+                        "roupas",
+                        "sapatos"
+                    ],
+                    "imagem": "./assets/produtos/produtos-roupas-sapatos-2.jpg",
+                    "titulo": "Sapato Social",
+                    "descricao": "Sapato social de couro legítimo.",
+                    "estrelas": 5,
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 21,
+                    "tags": [
+                        "roupas",
+                        "sapatos",
+                        "novos"
+                    ],
+                    "imagem": "./assets/produtos/produtos-roupas-sapatos-5.jpg",
+                    "titulo": "Tênis Esportivo",
+                    "descricao": "Tênis esportivo com amortecimento.",
+                    "estrelas": 4,
+                    "preco": "R$ 250,00"
+                },
+                {
+                    "id": 22,
+                    "tags": [
+                        "roupas",
+                        "sapatos",
+                        "best"
+                    ],
+                    "imagem": "./assets/produtos/produtos-roupas-sapatos-6.jpg",
+                    "titulo": "Sapatilha Feminina",
+                    "descricao": "Sapatilha feminina confortável.",
+                    "estrelas": 5,
+                    "preco": "R$ 100,00"
+                },
+                {
+                    "id": 23,
+                    "tags": [
+                        "roupas",
+                        "vestidos"
+                    ],
+                    "imagem": "./assets/produtos/produtos-roupas-vestidos-1.jpg",
+                    "titulo": "Vestido de Verão",
+                    "descricao": "Vestido de verão leve e colorido.",
+                    "estrelas": 4,
+                    "preco": "R$ 150,00"
+                },
+                {
+                    "id": 24,
+                    "tags": [
+                        "tecnologia",
+                        "camera"
+                    ],
+                    "imagem": "./assets/produtos/produtos-tecnologia-camera-3.jpg",
+                    "titulo": "Câmera Digital",
+                    "descricao": "Câmera digital com lente intercambiável.",
+                    "estrelas": 5,
+                    "preco": "R$ 2.000,00"
+                },
+                {
+                    "id": 25,
+                    "tags": [
+                        "tecnologia",
+                        "headfone"
+                    ],
+                    "imagem": "./assets/produtos/produtos-tecnologia-headfone-1.jpg",
+                    "titulo": "Headfone Bluetooth",
+                    "descricao": "Headfone bluetooth com cancelamento de ruído.",
+                    "estrelas": 5,
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 26,
+                    "tags": [
+                        "tecnologia",
+                        "headfone",
+                        "novos"
+                    ],
+                    "imagem": "./assets/produtos/produtos-tecnologia-headfone-5.jpg",
+                    "titulo": "Headfone Gamer",
+                    "descricao": "Headfone gamer com microfone.",
+                    "estrelas": 4,
+                    "preco": "R$ 350,00"
+                },
+                {
+                    "id": 27,
+                    "tags": [
+                        "tecnologia",
+                        "headfone"
+                    ],
+                    "imagem": "./assets/produtos/produtos-tecnologia-headfone-6.jpg",
+                    "titulo": "Headfone Profissional",
+                    "descricao": "Headfone profissional para estúdio.",
+                    "estrelas": 5,
+                    "preco": "R$ 400,00"
+                },
+                {
+                    "id": 28,
+                    "tags": [
+                        "tecnologia",
+                        "microfone",
+                        "novos"
+                    ],
+                    "imagem": "./assets/produtos/produtos-tecnologia-microfone-2.jpg",
+                    "titulo": "Microfone Condensador",
+                    "descricao": "Microfone condensador para gravações de alta qualidade.",
+                    "estrelas": 5,
+                    "preco": "R$ 450,00"
+                },
+                {
+                    "id": 29,
+                    "tags": [
+                        "tecnologia",
+                        "mouse",
+                        "best"
+                    ],
+                    "imagem": "./assets/produtos/produtos-tecnologia-mouse-10.jpg",
+                    "titulo": "Mouse Óptico",
+                    "descricao": "Mouse óptico ergonômico.",
+                    "estrelas": 4,
+                    "preco": "R$ 70,00"
+                },
+                {
+                    "id": 30,
+                    "tags": [
+                        "tecnologia",
+                        "notebook"
+                    ],
+                    "imagem": "./assets/produtos/produtos-tecnologia-notebook-4.jpg",
+                    "titulo": "Notebook Ultrafino",
+                    "descricao": "Notebook ultrafino com alta performance.",
+                    "estrelas": 5,
+                    "preco": "R$ 3.000,00"
+                },
+                {
+                    "id": 31,
+                    "tags": [
+                        "tecnologia",
+                        "teclado"
+                    ],
+                    "imagem": "./assets/produtos/produtos-tecnologia-teclado-7.jpg",
+                    "titulo": "Teclado Mecânico",
+                    "descricao": "Teclado mecânico com iluminação RGB.",
+                    "estrelas": 5,
+                    "preco": "R$ 250,00"
+                },
+                {
+                    "id": 32,
+                    "tags": [
+                        "tecnologia",
+                        "telefone",
+                        "novos",
+                        "best"
+                    ],
+                    "imagem": "./assets/produtos/produtos-tecnologia-telefone-8.jpg",
+                    "titulo": "Smartphone",
+                    "descricao": "Smartphone com câmera de alta resolução.",
+                    "estrelas": 5,
+                    "preco": "R$ 1.500,00"
+                },
+                {
+                    "id": 33,
+                    "tags": [
+                        "tecnologia",
+                        "telefone"
+                    ],
+                    "imagem": "./assets/produtos/produtos-tecnologia-telefone-9.jpg",
+                    "titulo": "Telefone Fixo",
+                    "descricao": "Telefone fixo com identificador de chamadas.",
+                    "estrelas": 4,
+                    "preco": "R$ 80,00"
+                },
+                {
+                    "id": 34,
+                    "tags": [
+                        "utensilios",
+                        "balanca"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-balanca-2.jpg",
+                    "titulo": "Balança Digital",
+                    "descricao": "Balança digital de precisão.",
+                    "estrelas": 5,
+                    "preco": "R$ 90,00"
+                },
+                {
+                    "id": 35,
+                    "tags": [
+                        "utensilios",
+                        "coifa"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-coifa-6.jpg",
+                    "titulo": "Coifa de Parede",
+                    "descricao": "Coifa de parede com alta capacidade de sucção.",
+                    "estrelas": 5,
+                    "preco": "R$ 800,00"
+                },
+                {
+                    "id": 36,
+                    "tags": [
+                        "utensilios",
+                        "fogao",
+                        "best"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-fogao-5.jpg",
+                    "titulo": "Fogão 4 Bocas",
+                    "descricao": "Fogão 4 bocas com forno elétrico.",
+                    "estrelas": 5,
+                    "preco": "R$ 1.200,00"
+                },
+                {
+                    "id": 37,
+                    "tags": [
+                        "utensilios",
+                        "liquidificador"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-liquidificador-3.jpg",
+                    "titulo": "Liquidificador",
+                    "descricao": "Liquidificador com várias velocidades.",
+                    "estrelas": 4,
+                    "preco": "R$ 200,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "estrelas": 5,
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 39,
+                    "tags": [
+                        "utensilios",
+                        "panela"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-panelaArroz-4.jpg",
+                    "titulo": "Panela de Arroz",
+                    "descricao": "Panela de arroz elétrica.",
+                    "estrelas": 5,
+                    "preco": "R$ 150,00"
+                }
+            ]
+        }
     ]
-  ]
 }

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./css/categorias.css">
     <link rel="stylesheet" href="./css/chamativo.css">
     <link rel="stylesheet" href="./css/produtos.css">
+    <link rel="stylesheet" href="./css/cubos.css">
+    <link rel="stylesheet" href="./css/carrinhoCompras.css">
 
     <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -32,7 +34,6 @@
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="produtos.php">Produtos</a></li>
                 <li><a href="contato.php">Contato</a></li>
-                <li><a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -103,22 +104,22 @@
                 </div>
                 <div class="categoria-item">
                     <img src="./icons/ico-decoracao.svg" class="categoria-item-img">
-                    <h2 class="categoria-item-titulo">Decoracao</h2>
+                    <h2 class="categoria-item-titulo">Decoração</h2>
                 </div>
                 <div class="categoria-item">
-                    <img src="./icons/ico-decoracao.svg" class="categoria-item-img">
+                    <img src="./icons/ico-automotivo.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Automotivo</h2>
                 </div>
                 <div class="categoria-item">
-                    <img src="./icons/ico-decoracao.svg" class="categoria-item-img">
+                    <img src="./icons/ico-games.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Games</h2>
                 </div>
                 <div class="categoria-item">
-                    <img src="./icons/ico-decoracao.svg" class="categoria-item-img">
+                    <img src="./icons/ico-brinquedos.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Brinquedos</h2>
                 </div>
                 <div class="categoria-item">
-                    <img src="./icons/ico-decoracao.svg" class="categoria-item-img">
+                    <img src="./icons/ico-praia.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Praia</h2>
                 </div>
             </div>
@@ -161,10 +162,25 @@
     <section>
 
         <!-- Primeira Lista de Produtos -->
-        <div class="produtos-container lista-1">
+        <div class="produtos-container ">
             <h2 class="produtos-titulo">Novos Produtos!</h2>
             <div class="produtos">
-                <div class="produtos-interno">
+                <div class="produtos-interno lista novos " data-tag="novos">
+                </div>
+                <button class="controle-produtos anterior">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="controle-produtos proximo">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Segunda Lista de Produtos -->
+        <div class="produtos-container ">
+            <h2 class="produtos-titulo">Melhores em Vendas!</h2>
+            <div class="produtos">
+                <div class="produtos-interno lista best" data-tag="best">
                     <!-- Produtos serão adicionados dinamicamente aqui -->
                 </div>
                 <button class="controle-produtos anterior">
@@ -176,11 +192,11 @@
             </div>
         </div>
 
-        <!-- Segundo Lista de Produtos -->
-        <div class="produtos-container lista-2">
-            <h2 class="produtos-titulo">Melhores em Vendas!</h2>
+        <!-- Terceira Lista de Produtos -->
+        <div class="produtos-container ">
+            <h2 class="produtos-titulo">Promoções!</h2>
             <div class="produtos">
-                <div class="produtos-interno">
+                <div class="produtos-interno lista promo" data-tag="promo">
                     <!-- Produtos serão adicionados dinamicamente aqui -->
                 </div>
                 <button class="controle-produtos anterior">
@@ -191,10 +207,153 @@
                 </button>
             </div>
         </div>
+
+
 
     </section>
 
-    <script src="./node/produtos.js"></script>
+    <section>
+        <div class="cubos-container">
+
+            <a href="">
+                <div class="cubo cb1">
+                    <img src="./assets/frete.svg" class="cubo-img">
+                    <div class="cubo-content">
+                        <h2 class="cubo-titulo">Frete Grátis</h2>
+                        <span class="cubo-chamativo">Frete grátis até 200Km</span>
+                        <button class="cubo-botao">Saiba Mais</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="cubo cb2">
+                    <img src="./assets/parcelar.svg" class="cubo-img">
+                    <div class="cubo-content">
+                        <h2 class="cubo-titulo">Parcelamento</h2>
+                        <span class="cubo-chamativo">Até 12 vezes</span>
+                        <button class="cubo-botao">Saiba Mais</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="cubo cb3">
+                    <img src="./assets/devolucao.svg" class="cubo-img">
+                    <div class="cubo-content">
+                        <h2 class="cubo-titulo">Devolução</h2>
+                        <span class="cubo-chamativo">Devolução durante 30 dias</span>
+                        <button class="cubo-botao">Saiba Mais</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="cubo cb4">
+                    <img src="./assets/atendimento.svg" class="cubo-img">
+                    <div class="cubo-content">
+                        <h2 class="cubo-titulo">Atendimento</h2>
+                        <span class="cubo-chamativo">Atendimento 24 horas</span>
+                        <button class="cubo-botao">Saiba Mais</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section>
+
+        <!-- Quarta Lista de Produtos -->
+        <div class="produtos-container ">
+            <h2 class="produtos-titulo">Mais Vendidos!</h2>
+            <div class="produtos">
+                <div class="produtos-interno lista" data-tag="acessorios">
+                    <!-- Produtos serão adicionados dinamicamente aqui -->
+                </div>
+                <button class="controle-produtos anterior">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="controle-produtos proximo">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Quinta Lista de Produtos -->
+        <div class="produtos-container ">
+            <h2 class="produtos-titulo">Lançamentos!</h2>
+            <div class="produtos">
+                <div class="produtos-interno lista">
+                    <!-- Produtos serão adicionados dinamicamente aqui -->
+                </div>
+                <button class="controle-produtos anterior">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="controle-produtos proximo">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sexta Lista de Produtos -->
+        <div class="produtos-container ">
+            <h2 class="produtos-titulo">Ofertas!</h2>
+            <div class="produtos">
+                <div class="produtos-interno lista">
+                    <!-- Produtos serão adicionados dinamicamente aqui -->
+                </div>
+                <button class="controle-produtos anterior">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="controle-produtos proximo">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Setima Lista de Produtos -->
+        <div class="produtos-container ">
+            <h2 class="produtos-titulo">Lista Teste!</h2>
+            <div class="produtos">
+                <div class="produtos-interno lista">
+                    <!-- Produtos serão adicionados dinamicamente aqui -->
+                </div>
+                <button class="controle-produtos anterior">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="controle-produtos proximo">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+    </section>
+
+    <section>
+        <div class="carrinhoCompras-Icone" id="carrinhoIcone">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </section>
+
+    <section>
+        <aside class="carrinhoCompras-container" id="carrinhoContainer">
+            <div class="carrinhoCompras-container-header">
+                <button class="carrinhoCompras-fechar" id="carrinhoFechar">
+                    <i class="fas fa-times"></i>
+                </button>
+                <span class="carrinhoCompras-titulo">Total do Carrinho</span>
+                <span class="carrinhoCompras-notacao">R$<span id="carrinhoCompras-valorTotal">00,00</span></span>
+                <a href=""><button class="carrinhoCompras-botao">Finalizar Compra</button></a>
+            </div>
+            <div class="carrinhoCompras-interno" id="carrinhoComprasInterno">
+                <!-- Itens do carrinho de compras serão inseridos aqui -->
+            </div>
+        </aside>
+    </section>
+
+
+    <!-- <script src="./js/produtosScroll.js"></script> -->
+    <!-- <script src="./node/produtos.js"></script> -->
+    <script src="./js/carrinhoCompras.js"></script>
     <script src="./js/produtos.js"></script>
     <script src="./js/categoria.js"></script>
     <script src="./js/banner.js"></script>
