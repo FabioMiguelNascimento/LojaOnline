@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procura por Categorias</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./icons/favicon.ico">
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/mainCSS/header.css">
+    <link rel="stylesheet" href="./css/mainCSS/main.css">
+    <link rel="stylesheet" href="./css/mainCSS/carrinhoCompras.css">
+    <link rel="stylesheet" href="./css/categoriaCSS/pesquisar.css">
+    <link rel="stylesheet" href="./css/categoriaCSS/produtos.css">
+
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html">
+            <h1 class="logo">Loja Online</h1>
+        </a>
+        <nav>
+            <div class="menuMobile" aria-expanded="false"></div>
+            <ul id="nav-ul">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="produtos.php">Produtos</a></li>
+                <li><a href="contato.php">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Pesquisa por Categorias -->
+    <section>
+        <div class="container-pesquisa-categorias">
+            <div class="categorias-pesquisar-interno">
+                <div class="categorias-pesquisar-container">
+                    <div class="categorias-pesquisar nome">
+                        <div class="input-container">
+                            <input type="text" id="pesquisaNome" placeholder=" " required>
+                            <label for="pesquisaNome">Produto</label>
+                            <button id="pesquisaNomeBtn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="categorias-pesquisar categoria">
+                        <div class="input-container">
+                            <input type="text" id="pesquisaCategoria" placeholder=" " required>
+                            <label for="pesquisaCategoria">Categoria</label>
+                            <button id="pesquisaCategoriaBtn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Produtos -->
+    <section>
+        <div class="produto-container">
+            <h2 class="produtos-container-titulo">Mostrando: <span id="categoria-titulo"></span></h2>
+            <div class="produto-interno" id="produto-interno">
+                <!-- Produtos serão carregados aqui -->
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Carrinho Icone -->
+    <section>
+        <div class="carrinhoCompras-Icone" id="carrinhoIcone">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </section>
+
+    <!-- Carrinho Aside -->
+    <section>
+        <aside class="carrinhoCompras-container" id="carrinhoContainer">
+            <div class="carrinhoCompras-container-header">
+                <button class="carrinhoCompras-fechar" id="carrinhoFechar">
+                    <i class="fas fa-times"></i>
+                </button>
+                <span class="carrinhoCompras-titulo">Total do Carrinho</span>
+                <span class="carrinhoCompras-notacao">R$<span id="carrinhoCompras-valorTotal">00,00</span></span>
+                <a href=""><button class="carrinhoCompras-botao">Finalizar Compra</button></a>
+            </div>
+            <div class="carrinhoCompras-interno" id="carrinhoComprasInterno">
+                <!-- Itens do carrinho de compras serão inseridos aqui -->
+            </div>
+        </aside>
+    </section>
+
+    <script src="./js/categorias/categorias.js"></script>
+    <script src="./js/mainJS/carrinhoCompras.js"></script>
+    <script src="./js/mainJS/header.js"></script>
+</body>
+
+</html>
