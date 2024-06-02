@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
     // Carregar dados do JSON
     fetch('./data/produtos.json')
         .then(response => response.json())
@@ -46,6 +46,94 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log(`Preenchendo lista: ${lista.className} com tag: ${tag}`);
                 preencherListaComProdutos(lista, produtos, tag);
             });
+
+            // Após preencher a lista, inicializar a lógica de rolagem
+            inicializarRolagem();
         })
         .catch(error => console.error('Erro ao carregar os dados do JSON:', error));
+
+    function inicializarRolagem() {
+        document.querySelectorAll('.produtos-container').forEach(container => {
+            const anteriorButton = container.querySelector('.controle-produtos.anterior');
+            const proximoButton = container.querySelector('.controle-produtos.proximo');
+            const produtosInterno = container.querySelector('.produtos-interno');
+            const itemWidth = produtosInterno.querySelector('.produto-item').clientWidth;
+            const gap = parseInt(getComputedStyle(produtosInterno).gap);
+
+            anteriorButton.addEventListener('click', function() {
+                produtosInterno.scrollBy({
+                    left: -(itemWidth + gap),
+                    behavior: 'smooth'
+                });
+            });
+
+            proximoButton.addEventListener('click', function() {
+                produtosInterno.scrollBy({
+                    left: itemWidth + gap,
+                    behavior: 'smooth'
+                });
+            });
+
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+            let velocity = 0;
+            let animationFrame;
+
+            produtosInterno.addEventListener('mousedown', (e) => {
+                isDown = true;
+                produtosInterno.classList.add('active');
+                startX = e.pageX - produtosInterno.offsetLeft;
+                scrollLeft = produtosInterno.scrollLeft;
+                produtosInterno.style.cursor = 'grabbing';
+                e.preventDefault(); // Evita arrastar imagens e texto
+            });
+
+            produtosInterno.addEventListener('mouseleave', () => {
+                isDown = false;
+                produtosInterno.classList.remove('active');
+                produtosInterno.style.cursor = 'grab';
+                cancelAnimationFrame(animationFrame);
+            });
+
+            produtosInterno.addEventListener('mouseup', () => {
+                isDown = false;
+                produtosInterno.classList.remove('active');
+                produtosInterno.style.cursor = 'grab';
+                cancelAnimationFrame(animationFrame);
+                smoothScroll();
+            });
+
+            produtosInterno.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - produtosInterno.offsetLeft;
+                const walk = (x - startX) * 1.5; 
+                produtosInterno.scrollLeft = scrollLeft - walk;
+                velocity = walk; // Capture a velocidade do movimento
+                cancelAnimationFrame(animationFrame);
+                animationFrame = requestAnimationFrame(updateScroll);
+            });
+
+            function updateScroll() {
+                if (isDown) return;
+                produtosInterno.scrollLeft -= velocity;
+                velocity *= 0.95; // Reduz a velocidade gradualmente
+                if (Math.abs(velocity) > 0.5) {
+                    animationFrame = requestAnimationFrame(updateScroll);
+                }
+            }
+
+            function smoothScroll() {
+                if (Math.abs(velocity) < 0.5) return;
+                produtosInterno.scrollLeft -= velocity;
+                velocity *= 0.95; // Reduz a velocidade gradualmente
+                animationFrame = requestAnimationFrame(smoothScroll);
+            }
+
+            produtosInterno.addEventListener('dragstart', (e) => {
+                e.preventDefault(); // Evita o comportamento padrão de arrastar
+            });
+        });
+    }
 });

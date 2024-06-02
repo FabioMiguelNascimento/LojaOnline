@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Online</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="./icons/favicon.ico">
+
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/mainCSS/header.css">
+    <link rel="stylesheet" href="./css/mainCSS/main.css">
     <link rel="stylesheet" href="./css/categorias.css">
     <link rel="stylesheet" href="./css/chamativo.css">
     <link rel="stylesheet" href="./css/produtos.css">
     <link rel="stylesheet" href="./css/cubos.css">
-    <link rel="stylesheet" href="./css/carrinhoCompras.css">
+    <link rel="stylesheet" href="./css/mainCSS/carrinhoCompras.css">
 
     <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -26,18 +29,22 @@
 
 <body>
 
+    <!-- Header -->
     <header>
-        <h1 class="logo">Loja Online</h1>
+        <a href="index.html">
+            <h1 class="logo">Loja Online</h1>
+        </a>
         <nav>
             <div class="menuMobile" aria-expanded="false"></div>
             <ul id="nav-ul">
-                <li><a href="index.php">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="produtos.php">Produtos</a></li>
                 <li><a href="contato.php">Contato</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Banner -->
     <section>
         <div class="banner">
             <div class="carrossel">
@@ -67,58 +74,71 @@
         </div>
     </section>
 
+    <!-- Categorias -->
     <section>
         <div class="categorias-container">
             <div class="categoria-interno">
-                <div class="categoria-item">
+                <div class="categoria-item" data-tag="eletrodomesticos">
                     <img src="./icons/ico-eletro.svg" class="categoria-item-img">
-                    <h2 class="categoria-item-titulo">Eletrônicos</h2>
+                    <h2 class="categoria-item-titulo">Eletrodomesticos</h2>
                 </div>
-                <div class="categoria-item">
-                    <img src="./icons/ico-casa.svg" class="categoria-item-img">
-                    <h2 class="categoria-item-titulo">Casa</h2>
+                <div class="categoria-item" data-tag="computador">
+                    <img src="./icons/ico-computador.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Computador</h2>
                 </div>
-                <div class="categoria-item">
+                <div class="categoria-item" data-tag="celular">
+                    <img src="./icons/ico-celular.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Celular</h2>
+                </div>
+                <div class="categoria-item" data-tag="tech">
+                    <img src="./icons/ico-tech.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Tecnologia</h2>
+                </div>
+                <div class="categoria-item" data-tag="banheiro">
                     <img src="./icons/ico-banheiro.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Banheiro</h2>
                 </div>
-                <div class="categoria-item">
+                <div class="categoria-item" data-tag="escritorio">
                     <img src="./icons/ico-escritorio.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Escritorio</h2>
                 </div>
-                <div class="categoria-item">
+                <div class="categoria-item" data-tag="jardim">
                     <img src="./icons/ico-jardim.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Jardim</h2>
                 </div>
-                <div class="categoria-item">
+                <div class="categoria-item" data-tag="cozinha">
                     <img src="./icons/ico-cozinha.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Cozinha</h2>
                 </div>
-                <div class="categoria-item">
+                <div class="categoria-item" data-tag="ferramentas">
                     <img src="./icons/ico-ferramentas.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Ferramentas</h2>
                 </div>
-                <div class="categoria-item">
+                <div class="categoria-item" data-tag="moveis">
+                    <img src="./icons/ico-moveis.svg" class="categoria-item-img">
+                    <h2 class="categoria-item-titulo">Moveis</h2>
+                </div>
+                <div class="categoria-item" data-tag="roupas">
                     <img src="./icons/ico-roupas.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Roupas</h2>
                 </div>
-                <div class="categoria-item">
+                <div class="categoria-item" data-tag="decoracao">
                     <img src="./icons/ico-decoracao.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Decoração</h2>
                 </div>
-                <div class="categoria-item">
+                <div class="categoria-item" data-tag="automotivo">
                     <img src="./icons/ico-automotivo.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Automotivo</h2>
                 </div>
-                <div class="categoria-item">
+                <div class="categoria-item" data-tag="games">
                     <img src="./icons/ico-games.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Games</h2>
                 </div>
-                <div class="categoria-item">
+                <div class="categoria-item" data-tag="brinquedos">
                     <img src="./icons/ico-brinquedos.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Brinquedos</h2>
                 </div>
-                <div class="categoria-item">
+                <div class="categoria-item" data-tag="praia">
                     <img src="./icons/ico-praia.svg" class="categoria-item-img">
                     <h2 class="categoria-item-titulo">Praia</h2>
                 </div>
@@ -132,6 +152,7 @@
         </div>
     </section>
 
+    <!-- Chamativo -->
     <section>
         <div class="chamativo-container">
             <div class="chamativo-interno">
@@ -159,6 +180,7 @@
         </div>
     </section>
 
+    <!-- Listas -->
     <section>
 
         <!-- Primeira Lista de Produtos -->
@@ -166,6 +188,7 @@
             <h2 class="produtos-titulo">Novos Produtos!</h2>
             <div class="produtos">
                 <div class="produtos-interno lista novos " data-tag="novos">
+                    <!-- Produtos serão adicionados dinamicamente aqui -->
                 </div>
                 <button class="controle-produtos anterior">
                     <i class="fas fa-arrow-left"></i>
@@ -212,6 +235,7 @@
 
     </section>
 
+    <!-- Cubos -->
     <section>
         <div class="cubos-container">
 
@@ -220,7 +244,7 @@
                     <img src="./assets/frete.svg" class="cubo-img">
                     <div class="cubo-content">
                         <h2 class="cubo-titulo">Frete Grátis</h2>
-                        <span class="cubo-chamativo">Frete grátis até 200Km</span>
+                        <span class="cubo-chamativo">Em até 200Km</span>
                         <button class="cubo-botao">Saiba Mais</button>
                     </div>
                 </div>
@@ -242,7 +266,7 @@
                     <img src="./assets/devolucao.svg" class="cubo-img">
                     <div class="cubo-content">
                         <h2 class="cubo-titulo">Devolução</h2>
-                        <span class="cubo-chamativo">Devolução durante 30 dias</span>
+                        <span class="cubo-chamativo">Durante 30 dias</span>
                         <button class="cubo-botao">Saiba Mais</button>
                     </div>
                 </div>
@@ -253,7 +277,7 @@
                     <img src="./assets/atendimento.svg" class="cubo-img">
                     <div class="cubo-content">
                         <h2 class="cubo-titulo">Atendimento</h2>
-                        <span class="cubo-chamativo">Atendimento 24 horas</span>
+                        <span class="cubo-chamativo">24 horas</span>
                         <button class="cubo-botao">Saiba Mais</button>
                     </div>
                 </div>
@@ -261,11 +285,12 @@
         </div>
     </section>
 
+    <!-- Listas -->
     <section>
 
         <!-- Quarta Lista de Produtos -->
         <div class="produtos-container ">
-            <h2 class="produtos-titulo">Mais Vendidos!</h2>
+            <h2 class="produtos-titulo">Acessorios</h2>
             <div class="produtos">
                 <div class="produtos-interno lista" data-tag="acessorios">
                     <!-- Produtos serão adicionados dinamicamente aqui -->
@@ -281,7 +306,7 @@
 
         <!-- Quinta Lista de Produtos -->
         <div class="produtos-container ">
-            <h2 class="produtos-titulo">Lançamentos!</h2>
+            <h2 class="produtos-titulo">Lista</h2>
             <div class="produtos">
                 <div class="produtos-interno lista">
                     <!-- Produtos serão adicionados dinamicamente aqui -->
@@ -297,7 +322,7 @@
 
         <!-- Sexta Lista de Produtos -->
         <div class="produtos-container ">
-            <h2 class="produtos-titulo">Ofertas!</h2>
+            <h2 class="produtos-titulo">Lista</h2>
             <div class="produtos">
                 <div class="produtos-interno lista">
                     <!-- Produtos serão adicionados dinamicamente aqui -->
@@ -313,7 +338,7 @@
 
         <!-- Setima Lista de Produtos -->
         <div class="produtos-container ">
-            <h2 class="produtos-titulo">Lista Teste!</h2>
+            <h2 class="produtos-titulo">Lista</h2>
             <div class="produtos">
                 <div class="produtos-interno lista">
                     <!-- Produtos serão adicionados dinamicamente aqui -->
@@ -328,12 +353,14 @@
 
     </section>
 
+    <!-- Carrinho Icone -->
     <section>
         <div class="carrinhoCompras-Icone" id="carrinhoIcone">
             <i class="fas fa-shopping-cart"></i>
         </div>
     </section>
 
+    <!-- Carrinho Aside -->
     <section>
         <aside class="carrinhoCompras-container" id="carrinhoContainer">
             <div class="carrinhoCompras-container-header">
@@ -351,13 +378,13 @@
     </section>
 
 
-    <!-- <script src="./js/produtosScroll.js"></script> -->
+    <script src="./js/produtosScroll.js"></script>
     <!-- <script src="./node/produtos.js"></script> -->
-    <script src="./js/carrinhoCompras.js"></script>
+    <script src="./js/mainJS/carrinhoCompras.js"></script>
     <script src="./js/produtos.js"></script>
     <script src="./js/categoria.js"></script>
     <script src="./js/banner.js"></script>
-    <script src="./js/header.js"></script>
+    <script src="./js/mainJS/header.js"></script>
 </body>
 
 </html>

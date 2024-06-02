@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const anteriorButton = document.querySelector('.controle-categorias.anterior');
     const proximoButton = document.querySelector('.controle-categorias.proximo');
     const categoriaInterno = document.querySelector('.categoria-interno');
@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const itemWidth = document.querySelector('.categoria-item').clientWidth;
     const gap = parseInt(getComputedStyle(categoriaInterno).gap);
 
-    anteriorButton.addEventListener('click', function() {
+    anteriorButton.addEventListener('click', function () {
         categoriaInterno.scrollBy({
             left: -(itemWidth + gap),
             behavior: 'smooth'
         });
     });
 
-    proximoButton.addEventListener('click', function() {
+    proximoButton.addEventListener('click', function () {
         categoriaInterno.scrollBy({
             left: itemWidth + gap,
             behavior: 'smooth'
@@ -79,5 +79,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     categoriaInterno.addEventListener('dragstart', (e) => {
         e.preventDefault(); // Evita o comportamento padrão de arrastar
+    });
+});
+
+
+// Funcionalidade node
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.categoria-item').forEach(categoria => {
+        categoria.addEventListener('click', () => {
+            const tag = categoria.getAttribute('data-tag');
+            window.location.href = `categorias.html?tag=${tag}`;
+        });
     });
 });

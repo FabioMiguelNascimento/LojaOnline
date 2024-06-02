@@ -44,7 +44,8 @@
                     "id": 4,
                     "tags": [
                         "acessorios",
-                        "oculos"
+                        "oculos",
+                        "promo"
                     ],
                     "imagem": "./assets/produtos/produtos-acessorios-oculos-2.jpg",
                     "titulo": "Óculos de Sol",
@@ -107,7 +108,8 @@
                     "id": 9,
                     "tags": [
                         "cosmeticos",
-                        "batom"
+                        "batom",
+                        "acessorios"
                     ],
                     "imagem": "./assets/produtos/produtos-cosmeticos-batom-2.jpg",
                     "titulo": "Batom Vermelho",
@@ -119,7 +121,8 @@
                     "id": 10,
                     "tags": [
                         "cosmeticos",
-                        "lapis"
+                        "lapis",
+                        "acessorios"
                     ],
                     "imagem": "./assets/produtos/produtos-cosmeticos-lapis-1.jpg",
                     "titulo": "Lápis de Olho",
@@ -131,7 +134,9 @@
                     "id": 11,
                     "tags": [
                         "cosmeticos",
-                        "oleo"
+                        "oleo",
+                        "promo",
+                        "acessorios"
                     ],
                     "imagem": "./assets/produtos/produtos-cosmeticos-oleos-3.jpg",
                     "titulo": "Óleo de Argan",
@@ -144,7 +149,8 @@
                     "tags": [
                         "cosmeticos",
                         "oleo",
-                        "best"
+                        "best",
+                        "acessorios"
                     ],
                     "imagem": "./assets/produtos/produtos-cosmeticos-oleos-4.jpg",
                     "titulo": "Óleo Essencial",
@@ -156,7 +162,8 @@
                     "id": 13,
                     "tags": [
                         "decoracao",
-                        "quadros"
+                        "quadros",
+                        "moveis"
                     ],
                     "imagem": "./assets/produtos/produtos-decoracao-quadros-1.jpg",
                     "titulo": "Quadro Abstrato",
@@ -169,7 +176,8 @@
                     "tags": [
                         "decoracao",
                         "quadros",
-                        "novos"
+                        "novos",
+                        "moveis"
                     ],
                     "imagem": "./assets/produtos/produtos-decoracao-quadros-2.jpg",
                     "titulo": "Quadro Floral",
@@ -198,8 +206,8 @@
                         "best"
                     ],
                     "imagem": "./assets/produtos/produtos-moveis-cadeira-3.jpg",
-                    "titulo": "Cadeira de Escritório",
-                    "descricao": "Cadeira ergonômica para escritório.",
+                    "titulo": "Cadeira de Couro",
+                    "descricao": "Cadeira de couro para sala de estar.",
                     "estrelas": 4,
                     "preco": "R$ 450,00"
                 },
@@ -207,11 +215,12 @@
                     "id": 17,
                     "tags": [
                         "moveis",
-                        "cadeira"
+                        "cadeira",
+                        "escritorio"
                     ],
                     "imagem": "./assets/produtos/produtos-moveis-cadeiras-1.png",
-                    "titulo": "Conjunto de Cadeiras",
-                    "descricao": "Conjunto de cadeiras para sala de jantar.",
+                    "titulo": "Cadeira de Escritório",
+                    "descricao": "Cadeira de escritório ergonômica.",
                     "estrelas": 5,
                     "preco": "R$ 800,00"
                 },
@@ -232,7 +241,8 @@
                     "tags": [
                         "moveis",
                         "sofa",
-                        "novos"
+                        "novos",
+                        "promo"
                     ],
                     "imagem": "./assets/produtos/produtos-moveis-sofa-5.jpg",
                     "titulo": "Sofá de Canto",
@@ -244,7 +254,8 @@
                     "id": 20,
                     "tags": [
                         "roupas",
-                        "sapatos"
+                        "sapatos",
+                        "promo"
                     ],
                     "imagem": "./assets/produtos/produtos-roupas-sapatos-2.jpg",
                     "titulo": "Sapato Social",
@@ -293,8 +304,9 @@
                 {
                     "id": 24,
                     "tags": [
-                        "tecnologia",
-                        "camera"
+                        "tech",
+                        "camera",
+                        "promo"
                     ],
                     "imagem": "./assets/produtos/produtos-tecnologia-camera-3.jpg",
                     "titulo": "Câmera Digital",
@@ -305,7 +317,7 @@
                 {
                     "id": 25,
                     "tags": [
-                        "tecnologia",
+                        "tech",
                         "headfone"
                     ],
                     "imagem": "./assets/produtos/produtos-tecnologia-headfone-1.jpg",
@@ -317,7 +329,7 @@
                 {
                     "id": 26,
                     "tags": [
-                        "tecnologia",
+                        "tech",
                         "headfone",
                         "novos"
                     ],
@@ -330,7 +342,7 @@
                 {
                     "id": 27,
                     "tags": [
-                        "tecnologia",
+                        "tech",
                         "headfone"
                     ],
                     "imagem": "./assets/produtos/produtos-tecnologia-headfone-6.jpg",
@@ -342,7 +354,7 @@
                 {
                     "id": 28,
                     "tags": [
-                        "tecnologia",
+                        "tech",
                         "microfone",
                         "novos"
                     ],
@@ -355,9 +367,10 @@
                 {
                     "id": 29,
                     "tags": [
-                        "tecnologia",
+                        "tech",
                         "mouse",
-                        "best"
+                        "best",
+                        "promo"
                     ],
                     "imagem": "./assets/produtos/produtos-tecnologia-mouse-10.jpg",
                     "titulo": "Mouse Óptico",
@@ -368,8 +381,8 @@
                 {
                     "id": 30,
                     "tags": [
-                        "tecnologia",
-                        "notebook"
+                        "tech",
+                        "computador"
                     ],
                     "imagem": "./assets/produtos/produtos-tecnologia-notebook-4.jpg",
                     "titulo": "Notebook Ultrafino",
@@ -380,20 +393,20 @@
                 {
                     "id": 31,
                     "tags": [
-                        "tecnologia",
+                        "tech",
                         "teclado"
                     ],
                     "imagem": "./assets/produtos/produtos-tecnologia-teclado-7.jpg",
-                    "titulo": "Teclado Mecânico",
-                    "descricao": "Teclado mecânico com iluminação RGB.",
+                    "titulo": "Teclado Bluetooth",
+                    "descricao": "Teclado bluetooth preto minimalista.",
                     "estrelas": 5,
                     "preco": "R$ 250,00"
                 },
                 {
                     "id": 32,
                     "tags": [
-                        "tecnologia",
-                        "telefone",
+                        "tech",
+                        "celular",
                         "novos",
                         "best"
                     ],
@@ -406,8 +419,8 @@
                 {
                     "id": 33,
                     "tags": [
-                        "tecnologia",
-                        "telefone"
+                        "tech",
+                        "celular"
                     ],
                     "imagem": "./assets/produtos/produtos-tecnologia-telefone-9.jpg",
                     "titulo": "Telefone Fixo",
@@ -419,7 +432,8 @@
                     "id": 34,
                     "tags": [
                         "utensilios",
-                        "balanca"
+                        "balanca",
+                        "cozinha"
                     ],
                     "imagem": "./assets/produtos/produtos-utensilios-balanca-2.jpg",
                     "titulo": "Balança Digital",
@@ -431,7 +445,9 @@
                     "id": 35,
                     "tags": [
                         "utensilios",
-                        "coifa"
+                        "coifa",
+                        "eletrodomesticos",
+                        "cozinha"
                     ],
                     "imagem": "./assets/produtos/produtos-utensilios-coifa-6.jpg",
                     "titulo": "Coifa de Parede",
@@ -444,7 +460,9 @@
                     "tags": [
                         "utensilios",
                         "fogao",
-                        "best"
+                        "best",
+                        "eletrodomesticos",
+                        "cozinha"
                     ],
                     "imagem": "./assets/produtos/produtos-utensilios-fogao-5.jpg",
                     "titulo": "Fogão 4 Bocas",
@@ -456,7 +474,9 @@
                     "id": 37,
                     "tags": [
                         "utensilios",
-                        "liquidificador"
+                        "liquidificador",
+                        "eletrodomesticos",
+                        "cozinha"
                     ],
                     "imagem": "./assets/produtos/produtos-utensilios-liquidificador-3.jpg",
                     "titulo": "Liquidificador",
@@ -468,7 +488,8 @@
                     "id": 38,
                     "tags": [
                         "utensilios",
-                        "loucas"
+                        "loucas",
+                        "cozinha"
                     ],
                     "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
                     "titulo": "Conjunto de Louças",
@@ -480,7 +501,10 @@
                     "id": 39,
                     "tags": [
                         "utensilios",
-                        "panela"
+                        "panela",
+                        "promo",
+                        "cozinha",
+                        "eletrodomesticos"
                     ],
                     "imagem": "./assets/produtos/produtos-utensilios-panelaArroz-4.jpg",
                     "titulo": "Panela de Arroz",

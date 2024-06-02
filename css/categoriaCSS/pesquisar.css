@@ -1,0 +1,105 @@
+.container-pesquisa-categorias {
+    width: 100%;
+    background: var(--azul-medio);
+    padding: 20px 0;
+}
+
+.categorias-pesquisar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.categorias-pesquisar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.categorias-pesquisar input {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    /* Espaço para o texto */
+    padding-right: 40px;
+    /* Espaço para o botão */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.categorias-pesquisar label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: var(--texto-escuro);
+    transition: all 0.2s ease;
+    pointer-events: none;
+    padding: 0 5px;
+}
+
+.categorias-pesquisar input:focus+label,
+.categorias-pesquisar input:not(:placeholder-shown)+label {
+    top: -10px;
+    left: 10px;
+    color: var(--texto-claro);
+    font-size: .9rem;
+}
+
+.categorias-pesquisar button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--azul-forte);
+    color: var(--texto-claro);
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para o campo de pesquisa */
+.ajuda-container {
+    display: flex;
+    flex: 0;
+    position: relative;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.ajuda-container input[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    padding-right: 40px;
+}
+
+.ajuda-container button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 11px;
+    border: none;
+    background-color: var(--azul-forte);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: var(--texto-claro);
+}
+
+
+@media (max-width: 768px) {
+    .ajuda-container {}
+}
