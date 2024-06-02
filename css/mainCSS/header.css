@@ -48,7 +48,7 @@ nav ul li:hover::after {
     display: none;
     width: 2rem;
     aspect-ratio: 1;
-    background-image: url('/assets/menuHamburguer.svg');
+    background-image: '/assets/menuHamburguer.svg';
     background-size: cover;
     cursor: pointer;
 }
@@ -78,6 +78,6 @@ nav ul li:hover::after {
     }
 
     .menuMobile[aria-expanded="true"] {
-        background-image: url('/assets/menuClose.svg');
+        background-image: '/assets/menuClose.svg';
     }
 }
