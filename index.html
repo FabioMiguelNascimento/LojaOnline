@@ -31,15 +31,26 @@
 
     <!-- Header -->
     <header>
-        <a href="index.html">
-            <h1 class="logo">Loja Online</h1>
-        </a>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./assets/LojaOnlineLogo.svg" alt="">
+            </a>
+        </div>
+
+        <div class="search">
+            <input type="text" id="headerSearchInput" placeholder="Pesquisar">
+            <button id="headerSearchButton">
+                <i class="fas fa-search"></i>
+            </button>
+            <div id="suggestions-container" class="suggestions-container"></div>
+        </div>
+
         <nav>
             <div class="menuMobile" aria-expanded="false"></div>
             <ul id="nav-ul">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="produtos.php">Produtos</a></li>
-                <li><a href="contato.php">Contato</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Produtos</a></li>
+                <li><a href="">Categorias</a></li>
             </ul>
         </nav>
     </header>
@@ -49,7 +60,7 @@
         <div class="banner">
             <div class="carrossel">
                 <div class="carrossel-interno">
-                    <div class="carrossel-item ativo">
+                    <div class="carrossel-item">
                         <img src="./assets/banner1.jpg" alt="Imagem 1">
                     </div>
                     <div class="carrossel-item">

@@ -1,83 +1,154 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 10%;
-    background: var(--azul-claro);
+  width: 100%;
+  height: 65px;
+  background: var(--azul-forte);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: calc(100%);
+  grid-template-areas: "logo search nav";
+  position: relative;
+}
+
+header .logo {
+  grid-area: logo;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+header .search {
+  grid-area: search;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+header .search input {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+header .search button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  border: none;
+  background: var(--azul-medio);
+  color: var(--texto-claro);
+  cursor: pointer;
+  border-radius: 0px 3px 3px 0;
+}
+
+header nav {
+  grid-area: nav;
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  & li {
+    margin: 0 10px;
     color: var(--texto-claro);
-    width: 100%;
-    position: relative;
-    z-index: 100;
+    transition: color 0.2s;
+  }
 
-    & h1 {
-        font-size: 2rem;
-    }
+  & li:hover {
+    color: var(--azul-medio);
+  }
 }
 
-nav ul {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.suggestions-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  width: calc(100%);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
 }
 
-nav ul li {
-    font-size: 1rem;
-    position: relative;
-
-    & :hover {
-        transition: 300ms;
-    }
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
 }
 
-nav ul li::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--texto-claro);
-    transition: width 0.3s;
+.suggestion-item img {
+    margin-right: 10px;
+    width: 24px; /* Ajuste o tamanho conforme necessário */
+    height: 24px; /* Ajuste o tamanho conforme necessário */
 }
 
-nav ul li:hover::after {
-    width: 100%;
+.suggestion-item:hover {
+  background: color-mix(in srgb, var(--azul-medio) 50%, white);
 }
 
 .menuMobile {
-    display: none;
-    width: 2rem;
-    aspect-ratio: 1;
-    background-image: url('../../assets/menuHamburguer.svg');
-    background-size: cover;
-    cursor: pointer;
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../assets/menuHamburguer.svg");
+  background-size: cover;
+  cursor: pointer;
 }
-
 @media (max-width: 768px) {
-    .menuMobile {
-        display: block;
-    }
+  .menuMobile {
+    display: block;
+    align-self: center;
+    margin-left: auto;
+  }
 
-    .menuMobile[aria-expanded="false"]+#nav-ul {
-        display: none;
-    }
+  .menuMobile[aria-expanded="false"] + #nav-ul {
+    display: none;
+  }
 
-    .menuMobile[aria-expanded="true"]+#nav-ul {
-        justify-content: center;
-        gap: 1rem;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: hsla(187, 52%, 30%, 0.9);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        padding: 1rem;
-        z-index: 99;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+  .menuMobile[aria-expanded="true"] + #nav-ul {
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background: hsla(187, 52%, 30%, 0.9);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 1rem;
+    z-index: 99;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
-    .menuMobile[aria-expanded="true"] {
-        background-image: url('../../assets/menuClose.svg');
-    }
+  .menuMobile[aria-expanded="true"] {
+    background-image: url("../../assets/menuClose.svg");
+  }
+
+  header {
+    height: max-content;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "logo . nav"
+      "search search search";
+  }
+
+  header .search {
+    height: 80%;
+  }
 }
