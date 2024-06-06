@@ -12,7 +12,6 @@
     "produtos produtos produtos";
 }
 
-/* Itens */
 .produto-interno {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -21,8 +20,9 @@
   gap: 10px;
   margin: 0 auto;
   max-width: 1200px;
-}
-
+  }
+  
+  /* Itens */
 .produto-item {
   scroll-snap-align: start;
   max-width: 300px;
@@ -32,6 +32,7 @@
   border-radius: 10px;
   position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  word-break: break-all;
 }
 
 .produto-item:hover {
@@ -117,8 +118,12 @@
   .produto-interno {
     grid-template-columns: repeat(2, 1fr);
     font-size: 1rem;
+    width: 100%;
   }
 
+  .produto-item-titulo{
+    font-size: 1rem;
+  }
   .adicionarCarrinho{
     display: block;
   }
