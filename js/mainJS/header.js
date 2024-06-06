@@ -7,7 +7,6 @@ menu.addEventListener("click", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const categoriaNomes = {
-    // Mapeamento de tags para nomes de categorias
     eletrodomesticos: "Eletrodomésticos",
     computador: "Computador",
     celular: "Celular",
@@ -27,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const categoriaIcones = {
-    // Mapeamento de tags para ícones de categorias
     eletrodomesticos: "./icons/ico-eletro.svg",
     computador: "./icons/ico-computador.svg",
     celular: "./icons/ico-celular.svg",
@@ -51,14 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
   suggestionsContainer.classList.add("suggestions-container");
   document.body.appendChild(suggestionsContainer);
 
-  // Função para renderizar sugestões de categorias
   const renderizarSugestoes = () => {
-    suggestionsContainer.innerHTML = ""; // Limpar sugestões anteriores
+    suggestionsContainer.innerHTML = ""; 
     for (const [key, value] of Object.entries(categoriaNomes)) {
       const suggestionItem = document.createElement("div");
       suggestionItem.classList.add("suggestion-item");
       suggestionItem.innerHTML = `<img src="${categoriaIcones[key]}" alt="${value} Icon">${value}`;
-      suggestionItem.dataset.tag = key; // Adicionar a tag como um atributo de dados
+      suggestionItem.dataset.tag = key; 
       suggestionsContainer.appendChild(suggestionItem);
     }
     suggestionsContainer.style.display = "block";
@@ -69,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     suggestionsContainer.style.width = headerSearchInput.offsetWidth + "px";
   };
 
-  headerSearchInput.addEventListener("focus", renderizarSugestoes); // Renderizar sugestões ao focar no input
+  headerSearchInput.addEventListener("focus", renderizarSugestoes); 
 
   document.addEventListener("click", (event) => {
     if (
@@ -89,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ? event.target
         : event.target.parentElement;
       const selectedCategory = suggestionItem.dataset.tag;
-      headerSearchInput.value = ""; // Limpar o input para evitar que a categoria seja enviada como termo de pesquisa
+      headerSearchInput.value = ""; 
       headerSearchInput.value = suggestionItem.textContent;
       suggestionsContainer.style.display = "none";
       window.location.href = `categorias.html?tag=${selectedCategory}`;
@@ -100,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
   headerSearchButton.addEventListener("click", () => {
     const pesquisa = headerSearchInput.value.trim().toLowerCase();
     if (pesquisa.length > 0) {
-      // Verificar se a pesquisa não está vazia
       headerSearchInput.value = ""; // Limpar o input
       window.location.href = `categorias.html?pesquisa=${pesquisa}`;
     }
@@ -110,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (event.key === "Enter") {
       const pesquisa = headerSearchInput.value.trim().toLowerCase();
       if (pesquisa.length > 0) {
-        // Verificar se a pesquisa não está vazia
         headerSearchInput.value = ""; // Limpar o input
         window.location.href = `categorias.html?pesquisa=${pesquisa}`;
       }

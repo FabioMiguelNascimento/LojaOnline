@@ -23,5 +23,3 @@ Este é um projeto simples de uma loja online desenvolvido para demonstrar habil
 3. Explore a página para ver a interface da loja e as funcionalidades implementadas.
 
 ## Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, reportar problemas ou enviar pull requests para este projeto.

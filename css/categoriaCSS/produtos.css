@@ -1,127 +1,125 @@
 .produtos-container-titulo {
-    margin: 1rem;
-    font-size: 2rem;
+  margin: 1rem;
+  font-size: 2rem;
 }
 
 .produto-container {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-areas:
-        "titulo titulo titulo"
-        "produtos produtos produtos";
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "produtos produtos produtos";
 }
 
 /* Itens */
 .produto-interno {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 20px;
-    grid-area: produtos;
-    gap: 10px;
-    margin: 0 auto;
-    max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+  grid-area: produtos;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .produto-item {
-    scroll-snap-align: start;
-    max-width: 300px;
-    height: 400px;
-    flex: 0 0 100%;
-    box-sizing: border-box;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  scroll-snap-align: start;
+  max-width: 300px;
+  height: 400px;
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .produto-item:hover {
-    transform: scale(1.005);
-    box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .1);
-    transition: transform .3s;
+  transform: scale(1.005);
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  & .adicionarCarrinho {
+    display: block;
+  }
 }
 
 .produto-item h2,
 .produto-item p,
 .produto-item .produto-item-estrelas {
-    padding: 0 .5rem 0 .5rem;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 .produto-item-titulo {
-    font-size: 1.5rem;
-    margin-bottom: .5rem;
-    cursor: pointer;
-    text-decoration: var(--azul-forte) underline wavy .05rem;
-    transition: 300ms;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  text-decoration: var(--azul-forte) underline wavy 0.05rem;
+  transition: 300ms;
 }
 
-.produto-item>img:hover~.produto-item-titulo {
-    color: var(--azul-forte);
-    text-decoration: underline wavy var(--azul-forte) .1rem;
-    transform: scale(1.005);
-}
-
-.produto-item-titulo:hover {
-    color: var(--azul-forte);
-    text-decoration: var(--azul-forte) underline wavy .1rem;
-    scale: 1.005;
+.produto-item:hover .produto-item-titulo {
+  color: var(--azul-forte);
+  text-decoration: var(--azul-forte) underline wavy 0.1rem;
+  transform: scale(1.005);
 }
 
 .produto-item-estrelas {
-    color: var(--azul-forte);
+  color: var(--azul-forte);
 }
 
 .produto-item-img {
-    width: 100%;
-    height: 200px;
-    border-radius: 10px 10px 0 0;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
 }
 
-.produto-item-img>img {
-    background: var(--azul-forte);
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
+.produto-item-img img {
+  background: var(--azul-forte);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 
 .produto-item-preco {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    background-color: var(--azul-medio);
-    color: white;
-    padding: .5rem;
-    border-radius: 0 10px 0 10px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background-color: var(--azul-medio);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0 10px 0 10px;
 }
-
-
 
 .adicionarCarrinho {
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    background-color: var(--azul-medio);
-    color: white;
-    padding: .5rem;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    transition: 200ms;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  background-color: var(--azul-medio);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: 200ms;
+  display: none;
 
-    &:hover {
-        background-color: var(--azul-claro);
-    }
+  &:hover {
+    background-color: var(--azul-claro);
+  }
 
-    &:active {
-        scale: 0.9;
-    }
+  &:active {
+    scale: 0.9;
+  }
 }
 
-
-
 @media (max-width: 768px) {
-    .produto-interno {
-        grid-template-columns: repeat(2, 1fr);
-        font-size: 1rem;
-    }
+  .produto-interno {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1rem;
+  }
+
+  .adicionarCarrinho{
+    display: block;
+  }
 }

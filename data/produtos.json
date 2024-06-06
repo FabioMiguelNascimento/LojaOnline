@@ -11,7 +11,14 @@
                     "imagem": "./assets/produtos/produtos-acessorios-aneis-5.jpg",
                     "titulo": "Anel de Prata",
                     "descricao": "Anel de prata com detalhes finos.",
+                    "descricaoDetalhada" : "Anel de prata com detalhes finos. Esse anel é perfeito para quem gosta de acessórios minimalistas e elegantes. O design é moderno e sofisticado, ideal para qualquer ocasião. O anel é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O anel é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/acessorios/aneis-5/sub-0.jpg",
+                        "./assets/produtos/subProdutos/acessorios/aneis-5/sub-1.jpg",
+                        "./assets/produtos/subProdutos/acessorios/aneis-5/sub-2.jpg",
+                        "./assets/produtos/subProdutos/acessorios/aneis-5/sub-3.jpg"
+                    ],
                     "preco": "R$ 50,00"
                 },
                 {
@@ -24,7 +31,11 @@
                     "imagem": "./assets/produtos/produtos-acessorios-chapeu-4.jpg",
                     "titulo": "Chapéu de Veludo",
                     "descricao": "Chapéu de veludo estiloso para o verão.",
+                    "descricaoDetalhada" : "Chapéu de veludo estiloso para o verão. Esse chapéu é perfeito para quem gosta de acessórios modernos e elegantes. O design é sofisticado e descolado, ideal para qualquer ocasião. O chapéu é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O chapéu é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/acessorios/chapeu-4/sub-0.jpeg"
+                    ],
                     "preco": "R$ 70,00"
                 },
                 {
@@ -37,7 +48,13 @@
                     "imagem": "./assets/produtos/produtos-acessorios-guardachuva-3.jpg",
                     "titulo": "Guarda-Chuva Dobrável",
                     "descricao": "Compacto e resistente, perfeito para qualquer clima.",
+                    "descricaoDetalhada" : "Guarda-chuva dobrável compacto e resistente, perfeito para qualquer clima. Esse guarda-chuva é perfeito para quem gosta de acessórios práticos e funcionais. O design é moderno e elegante, ideal para qualquer ocasião. O guarda-chuva é leve e fácil de transportar. O preço é acessível e o custo-benefício é excelente. O guarda-chuva é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/acessorios/guardachuva-3/sub-0.jpg",
+                        "./assets/produtos/subProdutos/acessorios/guardachuva-3/sub-1.jpg",
+                        "./assets/produtos/subProdutos/acessorios/guardachuva-3/sub-2.jpg"
+                    ],
                     "preco": "R$ 80,00"
                 },
                 {
@@ -50,7 +67,14 @@
                     "imagem": "./assets/produtos/produtos-acessorios-oculos-2.jpg",
                     "titulo": "Óculos de Sol",
                     "descricao": "Óculos de sol com proteção UV.",
+                    "descricaoDetalhada" : "Óculos de sol com proteção UV. Esse óculos é perfeito para quem gosta de acessórios modernos e estilosos. O design é sofisticado e descolado, ideal para qualquer ocasião. O óculos é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O óculos é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/acessorios/oculos-2/sub-0.jpg",
+                        "./assets/produtos/subProdutos/acessorios/oculos-2/sub-1.jpg",
+                        "./assets/produtos/subProdutos/acessorios/oculos-2/sub-2.jpg",
+                        "./assets/produtos/subProdutos/acessorios/oculos-2/sub-3.jpg"
+                    ],
                     "preco": "R$ 120,00"
                 },
                 {
@@ -63,7 +87,14 @@
                     "imagem": "./assets/produtos/produtos-acessorios-relogio-1.jpg",
                     "titulo": "Relógio de Pulso",
                     "descricao": "Relógio de pulso com pulseira de couro.",
+                    "descricaoDetalhada" : "Relógio de pulso com pulseira de couro. Esse relógio é perfeito para quem gosta de acessórios elegantes e sofisticados. O design é moderno e minimalista, ideal para qualquer ocasião. O relógio é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O relógio é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/acessorios/relogio-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/acessorios/relogio-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/acessorios/relogio-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/acessorios/relogio-1/sub-3.jpg"
+                    ],
                     "preco": "R$ 80,00"
                 },
                 {
@@ -76,7 +107,14 @@
                     "imagem": "./assets/produtos/produtos-acessorios-relogio-6.jpg",
                     "titulo": "Relógio Clássico",
                     "descricao": "Relógio clássico com design elegante.",
+                    "descricaoDetalhada" : "Relógio clássico com design elegante. Esse relógio é perfeito para quem gosta de acessórios sofisticados e modernos. O design é minimalista e atemporal, ideal para qualquer ocasião. O relógio é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O relógio é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/acessorios/relogio-6/sub-0.jpg",
+                        "./assets/produtos/subProdutos/acessorios/relogio-6/sub-1.jpg",
+                        "./assets/produtos/subProdutos/acessorios/relogio-6/sub-2.jpg",
+                        "./assets/produtos/subProdutos/acessorios/relogio-6/sub-3.jpg"
+                    ],
                     "preco": "R$ 150,00"
                 },
                 {
@@ -89,7 +127,14 @@
                     "imagem": "./assets/produtos/produtos-acessorios-relogio-7.jpg",
                     "titulo": "Relógio Esportivo",
                     "descricao": "Relógio esportivo resistente à água.",
+                    "descricaoDetalhada" : "Relógio esportivo resistente à água. Esse relógio é perfeito para quem gosta de acessórios modernos e funcionais. O design é arrojado e descolado, ideal para qualquer ocasião. O relógio é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O relógio é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/acessorios/relogio-7/sub-0.jpg",
+                        "./assets/produtos/subProdutos/acessorios/relogio-7/sub-1.jpg",
+                        "./assets/produtos/subProdutos/acessorios/relogio-7/sub-2.jpg",
+                        "./assets/produtos/subProdutos/acessorios/relogio-7/sub-3.jpg"
+                    ],
                     "preco": "R$ 200,00"
                 },
                 {
@@ -101,7 +146,14 @@
                     "imagem": "./assets/produtos/produtos-acessorios-relogio-8.jpg",
                     "titulo": "Relógio Digital",
                     "descricao": "Relógio digital com múltiplas funções.",
+                    "descricaoDetalhada" : "Relógio digital com múltiplas funções. Esse relógio é perfeito para quem gosta de acessórios tecnológicos e versáteis. O design é moderno e inovador, ideal para qualquer ocasião. O relógio é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O relógio é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/acessorios/relogio-8/sub-0.jpg",
+                        "./assets/produtos/subProdutos/acessorios/relogio-8/sub-1.jpg",
+                        "./assets/produtos/subProdutos/acessorios/relogio-8/sub-2.jpg",
+                        "./assets/produtos/subProdutos/acessorios/relogio-8/sub-3.jpg"
+                    ],
                     "preco": "R$ 100,00"
                 },
                 {
@@ -114,7 +166,14 @@
                     "imagem": "./assets/produtos/produtos-cosmeticos-batom-2.jpg",
                     "titulo": "Batom Vermelho",
                     "descricao": "Batom vermelho de longa duração.",
+                    "descricaoDetalhada" : "Batom vermelho de longa duração. Esse batom é perfeito para quem gosta de maquiagem de alta qualidade. O design é moderno e sofisticado, ideal para qualquer ocasião. O batom é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O batom é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/cosmeticos/batom-2/sub-0.jpg",
+                        "./assets/produtos/subProdutos/cosmeticos/batom-2/sub-1.jpg",
+                        "./assets/produtos/subProdutos/cosmeticos/batom-2/sub-2.jpg",
+                        "./assets/produtos/subProdutos/cosmeticos/batom-2/sub-3.jpg"
+                    ],
                     "preco": "R$ 30,00"
                 },
                 {
@@ -127,7 +186,14 @@
                     "imagem": "./assets/produtos/produtos-cosmeticos-lapis-1.jpg",
                     "titulo": "Lápis de Olho",
                     "descricao": "Lápis de olho resistente à água.",
+                    "descricaoDetalhada" : "Lápis de olho resistente à água. Esse lápis é perfeito para quem gosta de maquiagem de alta qualidade. O design é moderno e sofisticado, ideal para qualquer ocasião. O lápis é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O lápis é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/cosmeticos/lapis-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/cosmeticos/lapis-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/cosmeticos/lapis-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/cosmeticos/lapis-1/sub-3.jpg"
+                    ],
                     "preco": "R$ 20,00"
                 },
                 {
@@ -141,7 +207,14 @@
                     "imagem": "./assets/produtos/produtos-cosmeticos-oleos-3.jpg",
                     "titulo": "Óleo de Argan",
                     "descricao": "Óleo de Argan para hidratação profunda.",
+                    "descricaoDetalhada" : "Óleo de Argan para hidratação profunda. Esse óleo é perfeito para quem gosta de cuidar da pele e dos cabelos. O design é moderno e sofisticado, ideal para qualquer ocasião. O óleo é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O óleo é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/cosmeticos/oleos-3/sub-0.jpg",
+                        "./assets/produtos/subProdutos/cosmeticos/oleos-3/sub-1.jpg",
+                        "./assets/produtos/subProdutos/cosmeticos/oleos-3/sub-2.jpg",
+                        "./assets/produtos/subProdutos/cosmeticos/oleos-3/sub-3.jpg"
+                    ],
                     "preco": "R$ 90,00"
                 },
                 {
@@ -155,7 +228,14 @@
                     "imagem": "./assets/produtos/produtos-cosmeticos-oleos-4.jpg",
                     "titulo": "Óleo Essencial",
                     "descricao": "Óleo essencial de lavanda.",
+                    "descricaoDetalhada" : "Óleo essencial de lavanda. Esse óleo é perfeito para quem gosta de aromaterapia e relaxamento. O design é moderno e sofisticado, ideal para qualquer ocasião. O óleo é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O óleo é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/cosmeticos/oleos-4/sub-0.jpg",
+                        "./assets/produtos/subProdutos/cosmeticos/oleos-4/sub-1.jpg",
+                        "./assets/produtos/subProdutos/cosmeticos/oleos-4/sub-2.jpg",
+                        "./assets/produtos/subProdutos/cosmeticos/oleos-4/sub-3.jpg"
+                    ],
                     "preco": "R$ 50,00"
                 },
                 {
@@ -168,7 +248,14 @@
                     "imagem": "./assets/produtos/produtos-decoracao-quadros-1.jpg",
                     "titulo": "Quadro Abstrato",
                     "descricao": "Quadro abstrato para sala de estar.",
+                    "descricaoDetalhada" : "Quadro abstrato para sala de estar. Esse quadro é perfeito para quem gosta de decoração moderna e sofisticada. O design é minimalista e elegante, ideal para qualquer ambiente. O quadro é leve e fácil de instalar. O preço é acessível e o custo-benefício é excelente. O quadro é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/decoracao/quadros-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/decoracao/quadros-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/decoracao/quadros-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/decoracao/quadros-1/sub-3.jpg"
+                    ],
                     "preco": "R$ 200,00"
                 },
                 {
@@ -182,7 +269,14 @@
                     "imagem": "./assets/produtos/produtos-decoracao-quadros-2.jpg",
                     "titulo": "Quadro Floral",
                     "descricao": "Quadro floral com moldura de madeira.",
+                    "descricaoDetalhada" : "Quadro floral com moldura de madeira. Esse quadro é perfeito para quem gosta de decoração clássica e romântica. O design é delicado e charmoso, ideal para qualquer ambiente. O quadro é leve e fácil de instalar. O preço é acessível e o custo-benefício é excelente. O quadro é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/decoracao/quadros-2/sub-0.jpg",
+                        "./assets/produtos/subProdutos/decoracao/quadros-2/sub-1.jpg",
+                        "./assets/produtos/subProdutos/decoracao/quadros-2/sub-2.jpg",
+                        "./assets/produtos/subProdutos/decoracao/quadros-2/sub-3.jpg"
+                    ],
                     "preco": "R$ 150,00"
                 },
                 {
@@ -195,7 +289,14 @@
                     "imagem": "./assets/produtos/produtos-moveis-aparador-4.jpg",
                     "titulo": "Aparador de Madeira",
                     "descricao": "Aparador de madeira com design rústico.",
+                    "descricaoDetalhada" : "Aparador de madeira com design rústico. Esse aparador é perfeito para quem gosta de móveis elegantes e funcionais. O design é moderno e sofisticado, ideal para qualquer ambiente. O aparador é leve e fácil de instalar. O preço é acessível e o custo-benefício é excelente. O aparador é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/moveis/aparador-4/sub-0.jpg",
+                        "./assets/produtos/subProdutos/moveis/aparador-4/sub-1.jpg",
+                        "./assets/produtos/subProdutos/moveis/aparador-4/sub-2.jpg",
+                        "./assets/produtos/subProdutos/moveis/aparador-4/sub-3.jpg"
+                    ],
                     "preco": "R$ 350,00"
                 },
                 {
@@ -208,7 +309,14 @@
                     "imagem": "./assets/produtos/produtos-moveis-cadeira-3.jpg",
                     "titulo": "Cadeira de Couro",
                     "descricao": "Cadeira de couro para sala de estar.",
+                    "descricaoDetalhada" : "Cadeira de couro para sala de estar. Essa cadeira é perfeita para quem gosta de móveis clássicos e elegantes. O design é sofisticado e atemporal, ideal para qualquer ambiente. A cadeira é confortável e resistente. O preço é acessível e o custo-benefício é excelente. A cadeira é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/moveis/cadeira-3/sub-0.jpg",
+                        "./assets/produtos/subProdutos/moveis/cadeira-3/sub-1.jpg",
+                        "./assets/produtos/subProdutos/moveis/cadeira-3/sub-2.jpg",
+                        "./assets/produtos/subProdutos/moveis/cadeira-3/sub-3.jpg"
+                    ],
                     "preco": "R$ 450,00"
                 },
                 {
@@ -221,7 +329,14 @@
                     "imagem": "./assets/produtos/produtos-moveis-cadeiras-1.png",
                     "titulo": "Cadeira de Escritório",
                     "descricao": "Cadeira de escritório ergonômica.",
+                    "descricaoDetalhada" : "Cadeira de escritório ergonômica. Essa cadeira é perfeita para quem gosta de móveis confortáveis e funcionais. O design é moderno e sofisticado, ideal para qualquer ambiente. A cadeira é ajustável e resistente. O preço é acessível e o custo-benefício é excelente. A cadeira é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/moveis/cadeiras-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/moveis/cadeiras-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/moveis/cadeiras-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/moveis/cadeiras-1/sub-3.jpg"
+                    ],
                     "preco": "R$ 800,00"
                 },
                 {
@@ -233,7 +348,14 @@
                     "imagem": "./assets/produtos/produtos-moveis-sofa-2.jpg",
                     "titulo": "Sofá Retrátil",
                     "descricao": "Sofá retrátil com tecido de alta qualidade.",
+                    "descricaoDetalhada" : "Sofá retrátil com tecido de alta qualidade. Esse sofá é perfeito para quem gosta de móveis confortáveis e elegantes. O design é moderno e sofisticado, ideal para qualquer ambiente. O sofá é espaçoso e resistente. O preço é acessível e o custo-benefício é excelente. O sofá é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/moveis/sofa-2/sub-0.jpg",
+                        "./assets/produtos/subProdutos/moveis/sofa-2/sub-1.jpg",
+                        "./assets/produtos/subProdutos/moveis/sofa-2/sub-2.jpg",
+                        "./assets/produtos/subProdutos/moveis/sofa-2/sub-3.jpg"
+                    ],
                     "preco": "R$ 1.200,00"
                 },
                 {
@@ -247,7 +369,14 @@
                     "imagem": "./assets/produtos/produtos-moveis-sofa-5.jpg",
                     "titulo": "Sofá de Canto",
                     "descricao": "Sofá de canto com chaise.",
+                    "descricaoDetalhada" : "Sofá de canto com chaise. Esse sofá é perfeito para quem gosta de móveis modernos e versáteis. O design é sofisticado e descolado, ideal para qualquer ambiente. O sofá é espaçoso e confortável. O preço é acessível e o custo-benefício é excelente. O sofá é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/moveis/sofa-5/sub-0.jpg",
+                        "./assets/produtos/subProdutos/moveis/sofa-5/sub-1.jpg",
+                        "./assets/produtos/subProdutos/moveis/sofa-5/sub-2.jpg",
+                        "./assets/produtos/subProdutos/moveis/sofa-5/sub-3.jpg"
+                    ],
                     "preco": "R$ 1.500,00"
                 },
                 {
@@ -260,7 +389,14 @@
                     "imagem": "./assets/produtos/produtos-roupas-sapatos-2.jpg",
                     "titulo": "Sapato Social",
                     "descricao": "Sapato social de couro legítimo.",
+                    "descricaoDetalhada" : "Sapato social de couro legítimo. Esse sapato é perfeito para quem gosta de calçados elegantes e confortáveis. O design é clássico e atemporal, ideal para qualquer ocasião. O sapato é leve e resistente. O preço é acessível e o custo-benefício é excelente. O sapato é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/roupas/sapatos-2/sub-0.jpg",
+                        "./assets/produtos/subProdutos/roupas/sapatos-2/sub-1.jpg",
+                        "./assets/produtos/subProdutos/roupas/sapatos-2/sub-2.jpg",
+                        "./assets/produtos/subProdutos/roupas/sapatos-2/sub-3.jpg"
+                    ],
                     "preco": "R$ 300,00"
                 },
                 {
@@ -273,7 +409,14 @@
                     "imagem": "./assets/produtos/produtos-roupas-sapatos-5.jpg",
                     "titulo": "Tênis Esportivo",
                     "descricao": "Tênis esportivo com amortecimento.",
+                    "descricaoDetalhada" : "Tênis esportivo com amortecimento. Esse tênis é perfeito para quem gosta de calçados confortáveis e estilosos. O design é moderno e descolado, ideal para qualquer ocasião. O tênis é leve e resistente. O preço é acessível e o custo-benefício é excelente. O tênis é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/roupas/sapatos-5/sub-0.jpg",
+                        "./assets/produtos/subProdutos/roupas/sapatos-5/sub-1.jpg",
+                        "./assets/produtos/subProdutos/roupas/sapatos-5/sub-2.jpg",
+                        "./assets/produtos/subProdutos/roupas/sapatos-5/sub-3.jpg"
+                    ],
                     "preco": "R$ 250,00"
                 },
                 {
@@ -286,7 +429,14 @@
                     "imagem": "./assets/produtos/produtos-roupas-sapatos-6.jpg",
                     "titulo": "Sapatilha Feminina",
                     "descricao": "Sapatilha feminina confortável.",
+                    "descricaoDetalhada" : "Sapatilha feminina confortável. Essa sapatilha é perfeita para quem gosta de calçados práticos e elegantes. O design é clássico e atemporal, ideal para qualquer ocasião. A sapatilha é leve e resistente. O preço é acessível e o custo-benefício é excelente. A sapatilha é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/roupas/sapatos-6/sub-0.jpg",
+                        "./assets/produtos/subProdutos/roupas/sapatos-6/sub-1.jpg",
+                        "./assets/produtos/subProdutos/roupas/sapatos-6/sub-2.jpg",
+                        "./assets/produtos/subProdutos/roupas/sapatos-6/sub-3.jpg"
+                    ],
                     "preco": "R$ 100,00"
                 },
                 {
@@ -298,7 +448,14 @@
                     "imagem": "./assets/produtos/produtos-roupas-vestidos-1.jpg",
                     "titulo": "Vestido de Verão",
                     "descricao": "Vestido de verão leve e colorido.",
+                    "descricaoDetalhada" : "Vestido de verão leve e colorido. Esse vestido é perfeito para quem gosta de roupas frescas e estilosas. O design é moderno e descolado, ideal para qualquer ocasião. O vestido é confortável e resistente. O preço é acessível e o custo-benefício é excelente. O vestido é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/roupas/vestidos-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/roupas/vestidos-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/roupas/vestidos-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/roupas/vestidos-1/sub-3.jpg"
+                    ],
                     "preco": "R$ 150,00"
                 },
                 {
@@ -311,7 +468,14 @@
                     "imagem": "./assets/produtos/produtos-tecnologia-camera-3.jpg",
                     "titulo": "Câmera Digital",
                     "descricao": "Câmera digital com lente intercambiável.",
+                    "descricaoDetalhada" : "Câmera digital com lente intercambiável. Essa câmera é perfeita para quem gosta de fotografia de alta qualidade. O design é moderno e inovador, ideal para qualquer ocasião. A câmera é leve e fácil de usar. O preço é acessível e o custo-benefício é excelente. A câmera é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/tecnologia/camera-3/sub-0.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/camera-3/sub-1.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/camera-3/sub-2.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/camera-3/sub-3.jpg"
+                    ],
                     "preco": "R$ 2.000,00"
                 },
                 {
@@ -323,7 +487,14 @@
                     "imagem": "./assets/produtos/produtos-tecnologia-headfone-1.jpg",
                     "titulo": "Headfone Bluetooth",
                     "descricao": "Headfone bluetooth com cancelamento de ruído.",
+                    "descricaoDetalhada" : "Headfone bluetooth com cancelamento de ruído. Esse headfone é perfeito para quem gosta de música de alta qualidade. O design é moderno e sofisticado, ideal para qualquer ocasião. O headfone é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O headfone é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/tecnologia/headfone-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/headfone-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/headfone-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/headfone-1/sub-3.jpg"
+                    ],
                     "preco": "R$ 300,00"
                 },
                 {
@@ -336,7 +507,14 @@
                     "imagem": "./assets/produtos/produtos-tecnologia-headfone-5.jpg",
                     "titulo": "Headfone Gamer",
                     "descricao": "Headfone gamer com microfone.",
+                    "descricaoDetalhada" : "Headfone gamer com microfone. Esse headfone é perfeito para quem gosta de jogos e música de alta qualidade. O design é moderno e descolado, ideal para qualquer ocasião. O headfone é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O headfone é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/tecnologia/headfone-5/sub-0.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/headfone-5/sub-1.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/headfone-5/sub-2.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/headfone-5/sub-3.jpg"
+                    ],
                     "preco": "R$ 350,00"
                 },
                 {
@@ -348,7 +526,14 @@
                     "imagem": "./assets/produtos/produtos-tecnologia-headfone-6.jpg",
                     "titulo": "Headfone Profissional",
                     "descricao": "Headfone profissional para estúdio.",
+                    "descricaoDetalhada" : "Headfone profissional para estúdio. Esse headfone é perfeito para quem gosta de música de alta qualidade. O design é moderno e sofisticado, ideal para qualquer ocasião. O headfone é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O headfone é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/tecnologia/headfone-6/sub-0.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/headfone-6/sub-1.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/headfone-6/sub-2.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/headfone-6/sub-3.jpg"
+                    ],
                     "preco": "R$ 400,00"
                 },
                 {
@@ -361,7 +546,14 @@
                     "imagem": "./assets/produtos/produtos-tecnologia-microfone-2.jpg",
                     "titulo": "Microfone Condensador",
                     "descricao": "Microfone condensador para gravações de alta qualidade.",
+                    "descricaoDetalhada" : "Microfone condensador para gravações de alta qualidade. Esse microfone é perfeito para quem gosta de áudio de alta fidelidade. O design é moderno e sofisticado, ideal para qualquer ocasião. O microfone é leve e fácil de usar. O preço é acessível e o custo-benefício é excelente. O microfone é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/tecnologia/microfone-2/sub-0.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/microfone-2/sub-1.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/microfone-2/sub-2.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/microfone-2/sub-3.jpg"
+                    ],
                     "preco": "R$ 450,00"
                 },
                 {
@@ -375,7 +567,14 @@
                     "imagem": "./assets/produtos/produtos-tecnologia-mouse-10.jpg",
                     "titulo": "Mouse Óptico",
                     "descricao": "Mouse óptico ergonômico.",
+                    "descricaoDetalhada" : "Mouse óptico ergonômico. Esse mouse é perfeito para quem gosta de jogos e trabalho de alta precisão. O design é moderno e sofisticado, ideal para qualquer ocasião. O mouse é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O mouse é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/tecnologia/mouse-10/sub-0.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/mouse-10/sub-1.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/mouse-10/sub-2.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/mouse-10/sub-3.jpg"
+                    ],
                     "preco": "R$ 70,00"
                 },
                 {
@@ -387,7 +586,14 @@
                     "imagem": "./assets/produtos/produtos-tecnologia-notebook-4.jpg",
                     "titulo": "Notebook Ultrafino",
                     "descricao": "Notebook ultrafino com alta performance.",
+                    "descricaoDetalhada" : "Notebook ultrafino com alta performance. Esse notebook é perfeito para quem gosta de tecnologia de ponta. O design é moderno e sofisticado, ideal para qualquer ocasião. O notebook é leve e fácil de transportar. O preço é acessível e o custo-benefício é excelente. O notebook é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/tecnologia/notebook-4/sub-0.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/notebook-4/sub-1.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/notebook-4/sub-2.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/notebook-4/sub-3.jpg"
+                    ],
                     "preco": "R$ 3.000,00"
                 },
                 {
@@ -399,7 +605,14 @@
                     "imagem": "./assets/produtos/produtos-tecnologia-teclado-7.jpg",
                     "titulo": "Teclado Bluetooth",
                     "descricao": "Teclado bluetooth preto minimalista.",
+                    "descricaoDetalhada" : "Teclado bluetooth preto minimalista. Esse teclado é perfeito para quem gosta de design moderno e funcionalidade. O design é minimalista e elegante, ideal para qualquer ambiente. O teclado é leve e confortável de usar. O preço é acessível e o custo-benefício é excelente. O teclado é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/tecnologia/teclado-7/sub-0.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/teclado-7/sub-1.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/teclado-7/sub-2.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/teclado-7/sub-3.jpg"
+                    ],
                     "preco": "R$ 250,00"
                 },
                 {
@@ -413,7 +626,14 @@
                     "imagem": "./assets/produtos/produtos-tecnologia-telefone-8.jpg",
                     "titulo": "Smartphone",
                     "descricao": "Smartphone com câmera de alta resolução.",
+                    "descricaoDetalhada" : "Smartphone com câmera de alta resolução. Esse smartphone é perfeito para quem gosta de tecnologia de ponta. O design é moderno e sofisticado, ideal para qualquer ocasião. O smartphone é leve e fácil de usar. O preço é acessível e o custo-benefício é excelente. O smartphone é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/tecnologia/telefone-8/sub-0.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/telefone-8/sub-1.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/telefone-8/sub-2.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/telefone-8/sub-3.jpg"
+                    ],
                     "preco": "R$ 1.500,00"
                 },
                 {
@@ -425,7 +645,14 @@
                     "imagem": "./assets/produtos/produtos-tecnologia-telefone-9.jpg",
                     "titulo": "Telefone Fixo",
                     "descricao": "Telefone fixo com identificador de chamadas.",
+                    "descricaoDetalhada" : "Telefone fixo com identificador de chamadas. Esse telefone é perfeito para quem gosta de tecnologia de qualidade. O design é moderno e funcional, ideal para qualquer ambiente. O telefone é leve e fácil de usar. O preço é acessível e o custo-benefício é excelente. O telefone é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/tecnologia/telefone-9/sub-0.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/telefone-9/sub-1.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/telefone-9/sub-2.jpg",
+                        "./assets/produtos/subProdutos/tecnologia/telefone-9/sub-3.jpg"
+                    ],
                     "preco": "R$ 80,00"
                 },
                 {
@@ -438,7 +665,14 @@
                     "imagem": "./assets/produtos/produtos-utensilios-balanca-2.jpg",
                     "titulo": "Balança Digital",
                     "descricao": "Balança digital de precisão.",
+                    "descricaoDetalhada" : "Balança digital de precisão. Essa balança é perfeita para quem gosta de culinária e confeitaria. O design é moderno e funcional, ideal para qualquer cozinha. A balança é leve e fácil de usar. O preço é acessível e o custo-benefício é excelente. A balança é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/balanca-2/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/balanca-2/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/balanca-2/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/balanca-2/sub-3.jpg"
+                    ],
                     "preco": "R$ 90,00"
                 },
                 {
@@ -452,7 +686,14 @@
                     "imagem": "./assets/produtos/produtos-utensilios-coifa-6.jpg",
                     "titulo": "Coifa de Parede",
                     "descricao": "Coifa de parede com alta capacidade de sucção.",
+                    "descricaoDetalhada" : "Coifa de parede com alta capacidade de sucção. Essa coifa é perfeita para quem gosta de cozinhar sem fumaça e odores. O design é moderno e sofisticado, ideal para qualquer cozinha. A coifa é leve e fácil de instalar. O preço é acessível e o custo-benefício é excelente. A coifa é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/coifa-6/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/coifa-6/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/coifa-6/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/coifa-6/sub-3.jpg"
+                    ],
                     "preco": "R$ 800,00"
                 },
                 {
@@ -467,7 +708,14 @@
                     "imagem": "./assets/produtos/produtos-utensilios-fogao-5.jpg",
                     "titulo": "Fogão 4 Bocas",
                     "descricao": "Fogão 4 bocas com forno elétrico.",
+                    "descricaoDetalhada" : "Fogão 4 bocas com forno elétrico. Esse fogão é perfeito para quem gosta de cozinhar com praticidade e eficiência. O design é moderno e funcional, ideal para qualquer cozinha. O fogão é leve e fácil de instalar. O preço é acessível e o custo-benefício é excelente. O fogão é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/fogao-5/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/fogao-5/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/fogao-5/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/fogao-5/sub-3.jpg"
+                    ],
                     "preco": "R$ 1.200,00"
                 },
                 {
@@ -481,7 +729,14 @@
                     "imagem": "./assets/produtos/produtos-utensilios-liquidificador-3.jpg",
                     "titulo": "Liquidificador",
                     "descricao": "Liquidificador com várias velocidades.",
+                    "descricaoDetalhada" : "Liquidificador com várias velocidades. Esse liquidificador é perfeito para quem gosta de sucos e vitaminas saudáveis. O design é moderno e funcional, ideal para qualquer cozinha. O liquidificador é leve e fácil de usar. O preço é acessível e o custo-benefício é excelente. O liquidificador é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 4,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/liquidificador-3/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/liquidificador-3/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/liquidificador-3/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/liquidificador-3/sub-3.jpg"
+                    ],
                     "preco": "R$ 200,00"
                 },
                 {
@@ -494,7 +749,14 @@
                     "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
                     "titulo": "Conjunto de Louças",
                     "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
                     "preco": "R$ 300,00"
                 },
                 {
@@ -509,7 +771,14 @@
                     "imagem": "./assets/produtos/produtos-utensilios-panelaArroz-4.jpg",
                     "titulo": "Panela de Arroz",
                     "descricao": "Panela de arroz elétrica.",
+                    "descricaoDetalhada" : "Panela de arroz elétrica. Essa panela é perfeita para quem gosta de praticidade e eficiência na cozinha. O design é moderno e funcional, ideal para qualquer cozinha. A panela é leve e fácil de usar. O preço é acessível e o custo-benefício é excelente. A panela é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
                     "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/panelaArroz-4/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/panelaArroz-4/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/panelaArroz-4/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/panelaArroz-4/sub-3.jpg"
+                    ],
                     "preco": "R$ 150,00"
                 }
             ]

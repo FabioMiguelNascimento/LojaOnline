@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./icons/favicon.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/mainCSS/header.css">
+    <link rel="stylesheet" href="./css/mainCSS/main.css">
+    <link rel="stylesheet" href="./css/mainCSS/carrinhoCompras.css">
+    <link rel="stylesheet" href="./css/produtoCSS/MainSection.css">
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./assets/LojaOnlineLogo.svg" alt="">
+            </a>
+        </div>
+
+        <div class="search">
+            <input type="text" id="headerSearchInput" placeholder="Pesquisar">
+            <button id="headerSearchButton">
+                <i class="fas fa-search"></i>
+            </button>
+            <div id="suggestions-container" class="suggestions-container"></div>
+        </div>
+
+        <nav>
+            <div class="menuMobile" aria-expanded="false"></div>
+            <ul id="nav-ul">
+                <li><a href="">Home</a></li>
+                <li><a href="">Produtos</a></li>
+                <li><a href="">Categorias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="mainSection">
+
+            <div class="produtoImg">
+                <div class="produtoImgContainer">
+                    <img alt="">
+                </div>
+                <div class="controles">
+                    <button class="controle" id="controleAnterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="controle" id="controleProximo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="produtoSubImg">
+                <img class="active" alt="">
+                <img  alt="">
+                <img  alt="">
+                <img  alt="">
+                <img  alt="">
+            </div>
+            <div class="produtoDescricao">
+                <div class="produtoTitulo">
+                    <h2></h2>
+                </div>
+                <div class="valor">
+                    <span></span>
+                </div>
+                <h3>Descrição</h3>
+                <p></p>
+                    <div class="container">
+                        <div class="produto-estrelas"></div>
+                        <div class="produtoQuantidade">
+                            <label for="quantidadeInput">Quantidade</label>
+                            <input type="number" id="quantidadeInput" min="1"  max="10" value="1">
+                        </div>
+                    </div>
+                    <div class="produtoDescricaoBotoes">
+                    <button><i class="fas fa-shopping-cart"></i>Adicionar ao Carrinho</button>
+                    <button><i class="fas fa-credit-card"></i>Comprar</button>
+                </div>
+                <a>Detalhes</a>
+            </div>
+        </div>
+    </section>
+    <!-- 
+    <section>
+        <div class="secondSection">
+            <div class="produtoDetalhes">
+                <ul>
+                    <li>Material: Madeira</li>
+                    <li>Cor: Marrom</li>
+                    <li>Altura: 1,20m</li>
+                    <li>Largura: 0,50m</li>
+                    <li>Profundidade: 0,50m</li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- Carrinho Icone -->
+    <section>
+        <div class="carrinhoCompras-Icone" id="carrinhoIcone">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </section>
+
+    <!-- Carrinho Aside -->
+    <section>
+        <aside class="carrinhoCompras-container" id="carrinhoContainer">
+            <div class="carrinhoCompras-container-header">
+                <button class="carrinhoCompras-fechar" id="carrinhoFechar">
+                    <i class="fas fa-times"></i>
+                </button>
+                <span class="carrinhoCompras-titulo">Total do Carrinho</span>
+                <span class="carrinhoCompras-notacao">R$<span id="carrinhoCompras-valorTotal">00,00</span></span>
+                <a href=""><button class="carrinhoCompras-botao">Finalizar Compra</button></a>
+            </div>
+            <div class="carrinhoCompras-interno" id="carrinhoComprasInterno">
+                <!-- Itens do carrinho de compras serão inseridos aqui -->
+            </div>
+        </aside>
+    </section>
+
+    <script src="./js/mainJS/mainProdutos.js"></script>
+    <script src="./js/mainJS/header.js"></script>
+    <script src="./js/mainJS/carrinhoCompras.js"></script>
+</body>
+
+</html>

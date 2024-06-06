@@ -1,14 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Função para atualizar o total do carrinho
     function atualizarTotalCarrinho() {
         const totalElement = document.getElementById('carrinhoCompras-valorTotal');
         const precos = document.querySelectorAll('.carrinhoCompras-item-preco');
         let total = 0;
 
         precos.forEach(preco => {
-            const precoTexto = preco.innerText.trim(); // Remove espaços em branco extras
-            const precoFloat = parseFloat(precoTexto.replace('R$', '').replace(',', '.')); // Remove 'R$' e substitui vírgula por ponto
-            if (!isNaN(precoFloat)) { // Verifica se a conversão foi bem-sucedida
+            const precoTexto = preco.innerText.trim(); 
+            const precoFloat = parseFloat(precoTexto.replace('R$', '').replace(',', '.')); 
+            if (!isNaN(precoFloat)) { 
                 total += precoFloat;
             }
         });
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
         totalElement.innerText = 'R$ ' + total.toFixed(2).replace('.', ',');
     }
 
-    // Função para adicionar itens ao carrinho
     function adicionarItensAoCarrinho(produtos) {
         const container = document.getElementById('carrinhoComprasInterno');
         if (!container) {
@@ -24,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        console.log('Produtos:', produtos); // Verifica se os produtos estão corretamente carregados do JSON
+        console.log('Produtos:', produtos);
 
         produtos.forEach(produto => {
             const itemDiv = document.createElement('div');
@@ -43,10 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
             container.appendChild(itemDiv);
         });
 
-        // Atualiza o total do carrinho
         atualizarTotalCarrinho();
 
-        // Adiciona event listeners para os botões de remoção
         document.querySelectorAll('.carrinhoCompras-item-botao').forEach(botao => {
             botao.addEventListener('click', function (event) {
                 event.stopPropagation(); // Evita que o clique feche o carrinho
@@ -56,26 +52,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Fetch dos dados JSON e inicialização do carrinho
     fetch('./data/produtos.json')
         .then(response => response.json())
         .then(produtosData => {
-            const todosProdutos = produtosData.listas.flat(); // Combina todas as listas de produtos em uma única lista
+            const todosProdutos = produtosData.listas.flat();
             adicionarItensAoCarrinho(todosProdutos);
         })
         .catch(error => console.error('Erro ao carregar dados JSON:', error));
 
-    // Abrir carrinho lateral
     document.getElementById('carrinhoIcone').addEventListener('click', function () {
         document.getElementById('carrinhoContainer').classList.toggle('active');
     });
 
-    // Fechar lateral 
     document.getElementById('carrinhoFechar').addEventListener('click', function () {
         document.getElementById('carrinhoContainer').classList.remove('active');
     });
 
-    // Fechar o carrinho ao clicar fora
     window.addEventListener('click', function (event) {
         var carrinhoContainer = document.getElementById('carrinhoContainer');
         if (!carrinhoContainer.contains(event.target) && !document.getElementById('carrinhoIcone').contains(event.target)) {
@@ -83,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Evitar que cliques dentro do carrinho fechem o carrinho
     document.getElementById('carrinhoContainer').addEventListener('click', function (event) {
         event.stopPropagation();
     });

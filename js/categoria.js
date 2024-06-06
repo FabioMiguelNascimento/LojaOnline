@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         startX = e.pageX - categoriaInterno.offsetLeft;
         scrollLeft = categoriaInterno.scrollLeft;
         categoriaInterno.style.cursor = 'grabbing';
-        e.preventDefault(); // Evita arrastar imagens e texto
+        e.preventDefault(); 
     });
 
     categoriaInterno.addEventListener('mouseleave', () => {
@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - categoriaInterno.offsetLeft;
-        const walk = (x - startX) * 1.5; // Ajuste a velocidade de rolagem conforme necessário
+        const walk = (x - startX) * 1.5; 
         categoriaInterno.scrollLeft = scrollLeft - walk;
-        velocity = walk; // Capture a velocidade do movimento
+        velocity = walk; 
         cancelAnimationFrame(animationFrame);
         animationFrame = requestAnimationFrame(updateScroll);
     });
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateScroll() {
         if (isDown) return;
         categoriaInterno.scrollLeft -= velocity;
-        velocity *= 0.95; // Reduz a velocidade gradualmente
+        velocity *= 0.95; 
         if (Math.abs(velocity) > 0.5) {
             animationFrame = requestAnimationFrame(updateScroll);
         }
@@ -73,17 +73,16 @@ document.addEventListener('DOMContentLoaded', function () {
     function smoothScroll() {
         if (Math.abs(velocity) < 0.5) return;
         categoriaInterno.scrollLeft -= velocity;
-        velocity *= 0.95; // Reduz a velocidade gradualmente
+        velocity *= 0.95; 
         animationFrame = requestAnimationFrame(smoothScroll);
     }
 
     categoriaInterno.addEventListener('dragstart', (e) => {
-        e.preventDefault(); // Evita o comportamento padrão de arrastar
+        e.preventDefault(); 
     });
 });
 
 
-// Funcionalidade node
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('.categoria-item').forEach(categoria => {
         categoria.addEventListener('click', () => {

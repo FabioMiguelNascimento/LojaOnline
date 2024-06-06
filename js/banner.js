@@ -36,9 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(updateIndicators);
     });
 
-    // Inicialização dos indicadores e botões
-
-    // Código existente de rolagem com o mouse
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -73,9 +70,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - carrosselInterno.offsetLeft;
-        const walk = (x - startX) * 3; // Ajuste a velocidade de rolagem conforme necessário
+        const walk = (x - startX) * 3; 
         carrosselInterno.scrollLeft = scrollLeft - walk;
-        velocity = walk; // Capture a velocidade do movimento
+        velocity = walk; 
         cancelAnimationFrame(animationFrame);
         animationFrame = requestAnimationFrame(updateScroll);
     });
@@ -83,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateScroll() {
         if (isDown) return;
         carrosselInterno.scrollLeft -= velocity;
-        velocity *= 0.95; // Reduz a velocidade gradualmente
+        velocity *= 0.95; 
         if (Math.abs(velocity) > 0.5) {
             animationFrame = requestAnimationFrame(updateScroll);
         }
@@ -92,11 +89,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function smoothScroll() {
         if (Math.abs(velocity) < 0.5) return;
         carrosselInterno.scrollLeft -= velocity;
-        velocity *= 0.95; // Reduz a velocidade gradualmente
+        velocity *= 0.95; 
         animationFrame = requestAnimationFrame(smoothScroll);
     }
 
     carrosselInterno.addEventListener('dragstart', (e) => {
-        e.preventDefault(); // Evita o comportamento padrão de arrastar
+        e.preventDefault(); 
     });
 });

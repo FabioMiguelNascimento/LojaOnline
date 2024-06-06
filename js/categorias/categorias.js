@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (pesquisa) {
         categoriaTitulo.textContent = `Pesquisa: "${pesquisa}"`;
 
-        // Carregar dados do JSON e filtrar os produtos pela pesquisa
         fetch('./data/produtos.json')
             .then(response => response.json())
             .then(data => {
@@ -44,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (tag) {
         categoriaTitulo.textContent = categoriaNomes[tag] || "Categoria Desconhecida";
 
-        // Carregar dados do JSON e filtrar os produtos pela tag
         fetch('./data/produtos.json')
             .then(response => response.json())
             .then(data => {
@@ -57,19 +55,20 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         console.error('Nenhuma tag de categoria fornecida na URL.');
 
-        // Caso não haja tag nem pesquisa, mostrar mensagem de erro ou redirecionar para a página inicial, por exemplo
-        // window.location.href = '/';
     }
 
-    // Função para renderizar os produtos na página
     const renderizarProdutos = (produtosFiltrados, pesquisa) => {
-        produtoInterno.innerHTML = ''; // Limpar conteúdo atual
+        produtoInterno.innerHTML = '';
         if (produtosFiltrados.length > 0) {
             produtosFiltrados.forEach(produto => {
                 const produtoHTML = `
                     <div class="produto-item">
-                        <img class="produto-item-img" src="${produto.imagem}" alt="${produto.titulo}">
-                        <h2 class="produto-item-titulo">${produto.titulo}</h2>
+                        <a href="produto.html?id=${produto.id}">
+                          <img class="produto-item-img" src="${produto.imagem}" alt="${produto.titulo}">
+                        </a>
+                         <a href="produto.html?id=${produto.id}">
+                          <h2 class="produto-item-titulo">${produto.titulo}</h2>
+                        </a>
                         <p class="produto-item-descricao">${produto.descricao}</p>
                         <div class="produto-item-estrelas">
                             ${'★'.repeat(produto.estrelas)}
@@ -107,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Função para remover acentos de uma string
     const removeAcentos = (str) => {
         return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     };
