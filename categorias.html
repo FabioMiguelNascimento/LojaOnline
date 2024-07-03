@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="./css/mainCSS/header.css">
     <link rel="stylesheet" href="./css/mainCSS/main.css">
     <link rel="stylesheet" href="./css/mainCSS/carrinhoCompras.css">
-    <link rel="stylesheet" href="./css/categoriaCSS/pesquisar.css">
+    <link rel="stylesheet" href="./css/categoriaCSS/sidebar.css">
     <link rel="stylesheet" href="./css/categoriaCSS/produtos.css">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 
 </head>
 
@@ -61,16 +62,79 @@
             <div class="produto-interno" id="produto-interno">
                 <!-- Produtos serão carregados aqui -->
             </div>
+
+            <aside class="aside-selecoes">
+                <button class="aside-fechar" id="asideFechar">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="filtrar-btn" id="filtrarBtn">Filtrar</button>
+                <article class="selecao">
+                    <h3 class="aside-selecoes-titulo">Categorias</h3>
+                    <ul class="aside-selecoes-lista">
+                        
+                    </ul>
+                    <input type="checkbox" id="expand-btn" class="expand-btn">
+                </article>
+
+                <article>
+                    <h3 class="aside-selecoes-titulo">Faixa de Preço</h3>
+                    <div id="slider-container">
+                        <div id="slider-track"></div>
+                        <div id="slider-range"></div>
+                        <input type="range" id="min-slider" min="0" max="100" value="20">
+                        <input type="range" id="max-slider" min="0" max="100" value="80">
+                    </div>
+                    <div class="price-inputs">
+                        <div class="price-input-group">
+                            <label for="min-input">Min:</label>
+                            <input type="number" id="min-input" min="0" max="100" value="20">
+                        </div>
+                        <div class="price-input-group">
+                            <label for="max-input">Max:</label>
+                            <input type="number" id="max-input" min="0" max="100" value="80">
+                        </div>
+                    </div>
+                    <p>Faixa selecionada: R$ <span id="min-value"></span> - R$ <span id="max-value"></span></p>
+                </article>
+
+                <article class="selecao">
+                    <h3 class="aside-selecoes-titulo">Avaliação</h3>
+                    <div class="rating-filter">
+                        <label><input name="rating-radio" type="radio" value="5"> ★★★★★ </label>
+                        <label><input name="rating-radio" type="radio" value="4"> ★★★★☆ </label>
+                        <label><input name="rating-radio" type="radio" value="3"> ★★★☆☆ </label>
+                        <label><input name="rating-radio" type="radio" value="2"> ★★☆☆☆ </label>
+                    </div>
+                </article>
+
+                <article class="selecao">
+                    <h3 class="aside-selecoes-titulo">Ordenar por</h3>
+                    <select id="sort-select">
+                        <option value="relevance">Relevância</option>
+                        <option value="price-asc">Preço: Menor para Maior</option>
+                        <option value="price-desc">Preço: Maior para Menor</option>
+                    </select>
+                </article>
+            </aside>
         </div>
     </section>
 
 
-
+    <div class="pagination-container">
+        <button class="page-btn" data-page="1">1</button>
+        <!-- Adicione mais botões conforme necessário -->
+    </div>
     <!-- Carrinho Icone -->
     <section>
-        <div class="carrinhoCompras-Icone" id="carrinhoIcone">
-            <i class="fas fa-shopping-cart"></i>
+        <div class="icones">
+            <div class="menuFiltros-icone" id="filtroMenuIcone">
+                <i class="fas fa-filter"></i>
+            </div>
+            <div class="carrinhoCompras-Icone" id="carrinhoIcone">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
         </div>
+
     </section>
 
     <!-- Carrinho Aside -->
@@ -91,8 +155,19 @@
     </section>
 
     <!-- Scripts -->
+    <!-- Script para estilo de icones -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const url = new URL(window.location.href);
+            if (url.pathname === '/categorias.html') {
+                document.querySelector('.icones').dataset.url = url.href;
+            }
+        });
+    </script>
+
     <script src="./js/mainJS/mainProdutos.js"></script>
     <script src="./js/categorias/categorias.js"></script>
+    <script src="./js/categorias/sidebar.js"></script>
     <script src="./js/mainJS/carrinhoCompras.js"></script>
     <script src="./js/mainJS/header.js"></script>
 </body>

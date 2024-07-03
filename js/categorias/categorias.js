@@ -19,94 +19,171 @@ document.addEventListener("DOMContentLoaded", function () {
         praia: "Praia",
     };
 
-    const categoriaTitulo = document.getElementById('categoria-titulo');
-    const produtoInterno = document.querySelector('.produto-interno');
+    const categoriaTitulo = document.getElementById("categoria-titulo");
+    const produtoInterno = document.querySelector(".produto-interno");
+    const produtosPorPagina = 50;
+    let currentPage = 1;
 
     const params = new URLSearchParams(window.location.search);
-    const tag = params.get('tag');
-    const pesquisa = params.get('pesquisa');
+    const tag = params.get("tag");
+    const pesquisa = params.get("pesquisa");
 
-    if (pesquisa) {
-        categoriaTitulo.textContent = `Pesquisa: "${pesquisa}"`;
+    const renderizarProdutos = (produtosFiltrados, pageNumber) => {
+        produtoInterno.innerHTML = "";
+        const startIndex = (pageNumber - 1) * produtosPorPagina;
+        const endIndex = startIndex + produtosPorPagina;
+        const produtosPaginaAtual = produtosFiltrados.slice(startIndex, endIndex);
 
-        fetch('./data/produtos.json')
-            .then(response => response.json())
-            .then(data => {
-                const produtos = data.listas[0].produtos;
-                const produtosFiltrados = produtos.filter(produto =>
-                    removeAcentos(produto.titulo.toLowerCase()).includes(removeAcentos(pesquisa.toLowerCase()))
-                );
-
-                renderizarProdutos(produtosFiltrados, pesquisa);
-            })
-            .catch(error => console.error('Erro ao carregar os dados do JSON:', error));
-    } else if (tag) {
-        categoriaTitulo.textContent = categoriaNomes[tag] || "Categoria Desconhecida";
-
-        fetch('./data/produtos.json')
-            .then(response => response.json())
-            .then(data => {
-                const produtos = data.listas[0].produtos;
-                const produtosFiltrados = produtos.filter(produto => produto.tags.includes(tag));
-
-                renderizarProdutos(produtosFiltrados, '');
-            })
-            .catch(error => console.error('Erro ao carregar os dados do JSON:', error));
-    } else {
-        console.error('Nenhuma tag de categoria fornecida na URL.');
-
-    }
-
-    const renderizarProdutos = (produtosFiltrados, pesquisa) => {
-        produtoInterno.innerHTML = '';
-        if (produtosFiltrados.length > 0) {
-            produtosFiltrados.forEach(produto => {
-                const produtoHTML = `
-                    <div class="produto-item">
-                        <a href="produto.html?id=${produto.id}">
-                          <img class="produto-item-img" src="${produto.imagem}" alt="${produto.titulo}">
-                        </a>
-                         <a href="produto.html?id=${produto.id}">
-                          <h2 class="produto-item-titulo">${produto.titulo}</h2>
-                        </a>
-                        <p class="produto-item-descricao">${produto.descricao}</p>
-                        <div class="produto-item-estrelas">
-                            ${'★'.repeat(produto.estrelas)}
-                        </div>
-                        <p class="produto-item-preco">${produto.preco}</p>
-                        <button class="adicionarCarrinho" data-nome="${produto.titulo}" data-preco="${produto.preco}">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
+        produtosPaginaAtual.forEach((produto) => {
+            const produtoHTML = `
+                <div class="produto-item">
+                    <a href="produto.html?id=${produto.id}">
+                        <img class="produto-item-img" src="${produto.imagem}" alt="${produto.titulo}">
+                    </a>
+                    <a href="produto.html?id=${produto.id}">
+                        <h2 class="produto-item-titulo">${produto.titulo}</h2>
+                    </a>
+                    <p class="produto-item-descricao">${produto.descricao}</p>
+                    <div class="produto-item-estrelas">
+                        ${"★".repeat(produto.estrelas)}
                     </div>
-                `;
-                produtoInterno.insertAdjacentHTML('beforeend', produtoHTML);
-            });
-        } else {
-            produtoInterno.innerHTML = `
-                <p class="texto-ajuda">Não encontrou o que deseja? Que tal pesquisar por todos os produtos!</p>
-                <div class="ajuda-container">
-                    <input type="text" id="pesquisaTodos" placeholder="Pesquisar todos os produtos">
-                    <button id="pesquisarTodosBtn">
-                        <i class="fas fa-search"></i>
+                    <p class="produto-item-preco">${produto.preco}</p>
+                    <button class="adicionarCarrinho" data-nome="${produto.titulo}" data-preco="${produto.preco}">
+                        <i class="fas fa-shopping-cart"></i>
                     </button>
                 </div>
             `;
-            const pesquisarTodosBtn = document.getElementById('pesquisarTodosBtn');
-            const pesquisaTodosInput = document.getElementById('pesquisaTodos');
-            pesquisarTodosBtn.addEventListener('click', () => {
-                const pesquisaTodos = pesquisaTodosInput.value.trim().toLowerCase();
-                window.location.href = `categorias.html?pesquisa=${pesquisaTodos}`;
-            });
-            pesquisaTodosInput.addEventListener('keypress', (event) => {
-                if (event.key === 'Enter') {
-                    const pesquisaTodos = pesquisaTodosInput.value.trim().toLowerCase();
-                    window.location.href = `categorias.html?pesquisa=${pesquisaTodos}`;
-                }
-            });
+            produtoInterno.insertAdjacentHTML("beforeend", produtoHTML);
+        });
+
+        renderizarPaginacao(produtosFiltrados.length);
+        window.initializeSidebar(produtosFiltrados, categoriaNomes);
+    };
+
+    const renderizarPaginacao = (totalProdutos) => {
+        const totalPages = Math.ceil(totalProdutos / produtosPorPagina);
+        const paginationContainer = document.querySelector(".pagination-container");
+        paginationContainer.innerHTML = "";
+
+        for (let i = 1; i <= totalPages; i++) {
+            const pageBtn = document.createElement("button");
+            pageBtn.classList.add("page-btn");
+            pageBtn.textContent = i;
+            pageBtn.dataset.page = i;
+            if (i === currentPage) {
+                pageBtn.classList.add("active");
+            }
+            paginationContainer.appendChild(pageBtn);
+        }
+    };
+
+    document.addEventListener("click", (event) => {
+        if (event.target.classList.contains("page-btn")) {
+            const pageNumber = parseInt(event.target.dataset.page);
+            currentPage = pageNumber;
+            window.scrollTo({ top: 0 });
+            fetchProdutosAtualizados(pageNumber);
+        }
+    });
+
+    const fetchProdutosAtualizados = (pageNumber) => {
+        const params = new URLSearchParams(window.location.search);
+        const tag = params.get("tag");
+        const pesquisa = params.get("pesquisa");
+
+        if (pesquisa) {
+            fetch("./data/produtos.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    const produtos = data.listas[0].produtos;
+                    const produtosFiltrados = produtos.filter((produto) =>
+                        removeAcentos(produto.titulo.toLowerCase()).includes(
+                            removeAcentos(pesquisa.toLowerCase())
+                        )
+                    );
+
+                    renderizarProdutos(produtosFiltrados, pageNumber);
+                })
+                .catch((error) =>
+                    console.error("Erro ao carregar os dados do JSON:", error)
+                );
+        } else if (tag) {
+            fetch("./data/produtos.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    const produtos = data.listas[0].produtos;
+                    const produtosFiltrados = produtos.filter((produto) =>
+                        produto.tags.includes(tag)
+                    );
+
+                    renderizarProdutos(produtosFiltrados, pageNumber);
+                })
+                .catch((error) =>
+                    console.error("Erro ao carregar os dados do JSON:", error)
+                );
+        } else {
+            fetch("./data/produtos.json")
+                .then((response) => response.json())
+                .then((data) => {
+                    const produtos = data.listas[0].produtos;
+                    renderizarProdutos(produtos, pageNumber);
+                })
+                .catch((error) =>
+                    console.error("Erro ao carregar os dados do JSON:", error)
+                );
         }
     };
 
     const removeAcentos = (str) => {
         return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     };
+
+    if (pesquisa) {
+        categoriaTitulo.textContent = `Pesquisa: "${pesquisa}"`;
+
+        fetch("./data/produtos.json")
+            .then((response) => response.json())
+            .then((data) => {
+                const produtos = data.listas[0].produtos;
+                const produtosFiltrados = produtos.filter((produto) =>
+                    removeAcentos(produto.titulo.toLowerCase()).includes(
+                        removeAcentos(pesquisa.toLowerCase())
+                    )
+                );
+
+                renderizarProdutos(produtosFiltrados, currentPage);
+            })
+            .catch((error) =>
+                console.error("Erro ao carregar os dados do JSON:", error)
+            );
+    } else if (tag) {
+        categoriaTitulo.textContent =
+            categoriaNomes[tag] || "Categoria Desconhecida";
+
+        fetch("./data/produtos.json")
+            .then((response) => response.json())
+            .then((data) => {
+                const produtos = data.listas[0].produtos;
+                const produtosFiltrados = produtos.filter((produto) =>
+                    produto.tags.includes(tag)
+                );
+
+                renderizarProdutos(produtosFiltrados, currentPage);
+            })
+            .catch((error) =>
+                console.error("Erro ao carregar os dados do JSON:", error)
+            );
+    } else {
+        categoriaTitulo.textContent = "Todos os Produtos";
+
+        fetch("./data/produtos.json")
+            .then((response) => response.json())
+            .then((data) => {
+                const produtos = data.listas[0].produtos;
+                renderizarProdutos(produtos, currentPage);
+            })
+            .catch((error) =>
+                console.error("Erro ao carregar os dados do JSON:", error)
+            );
+    }
 });

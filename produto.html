@@ -21,7 +21,8 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-
+    <!-- Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -54,26 +55,13 @@
 
     <section>
         <div class="mainSection">
-
-            <div class="produtoImg">
-                <div class="produtoImgContainer">
-                    <img alt="">
+            <div class="wrapper">
+                <div class="carousel-nav">
+                    <!-- As imagens serão inseridas aqui dinamicamente -->
                 </div>
-                <div class="controles">
-                    <button class="controle" id="controleAnterior">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="controle" id="controleProximo">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                <div class="carousel-main">
+                    <!-- As imagens principais serão inseridas aqui dinamicamente -->
                 </div>
-            </div>
-            <div class="produtoSubImg">
-                <img class="active" alt="">
-                <img  alt="">
-                <img  alt="">
-                <img  alt="">
-                <img  alt="">
             </div>
             <div class="produtoDescricao">
                 <div class="produtoTitulo">
@@ -84,14 +72,14 @@
                 </div>
                 <h3>Descrição</h3>
                 <p></p>
-                    <div class="container">
-                        <div class="produto-estrelas"></div>
-                        <div class="produtoQuantidade">
-                            <label for="quantidadeInput">Quantidade</label>
-                            <input type="number" id="quantidadeInput" min="1"  max="10" value="1">
-                        </div>
+                <div class="container">
+                    <div class="produto-estrelas"></div>
+                    <div class="produtoQuantidade">
+                        <label for="quantidadeInput">Quantidade</label>
+                        <input type="number" id="quantidadeInput" min="1" max="10" value="1">
                     </div>
-                    <div class="produtoDescricaoBotoes">
+                </div>
+                <div class="produtoDescricaoBotoes">
                     <button><i class="fas fa-shopping-cart"></i>Adicionar ao Carrinho</button>
                     <button><i class="fas fa-credit-card"></i>Comprar</button>
                 </div>
@@ -99,26 +87,13 @@
             </div>
         </div>
     </section>
-    <!-- 
-    <section>
-        <div class="secondSection">
-            <div class="produtoDetalhes">
-                <ul>
-                    <li>Material: Madeira</li>
-                    <li>Cor: Marrom</li>
-                    <li>Altura: 1,20m</li>
-                    <li>Largura: 0,50m</li>
-                    <li>Profundidade: 0,50m</li>
-                </ul>
-            </div>
-        </div>
-    </section> -->
-
 
     <!-- Carrinho Icone -->
     <section>
-        <div class="carrinhoCompras-Icone" id="carrinhoIcone">
-            <i class="fas fa-shopping-cart"></i>
+        <div class="icones">
+            <div class="carrinhoCompras-Icone" id="carrinhoIcone">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
         </div>
     </section>
 
@@ -139,6 +114,10 @@
         </aside>
     </section>
 
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Scripts -->
     <script src="./js/mainJS/mainProdutos.js"></script>
     <script src="./js/mainJS/header.js"></script>
     <script src="./js/mainJS/carrinhoCompras.js"></script>

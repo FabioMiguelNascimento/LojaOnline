@@ -413,9 +413,7 @@
                     "estrelas": 4,
                     "subImg" : [
                         "./assets/produtos/subProdutos/roupas/sapatos-5/sub-0.jpg",
-                        "./assets/produtos/subProdutos/roupas/sapatos-5/sub-1.jpg",
-                        "./assets/produtos/subProdutos/roupas/sapatos-5/sub-2.jpg",
-                        "./assets/produtos/subProdutos/roupas/sapatos-5/sub-3.jpg"
+                        "./assets/produtos/subProdutos/roupas/sapatos-5/sub-1.jpg"
                     ],
                     "preco": "R$ 250,00"
                 },
@@ -780,6 +778,526 @@
                         "./assets/produtos/subProdutos/utensilios/panelaArroz-4/sub-3.jpg"
                     ],
                     "preco": "R$ 150,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
+                },
+                {
+                    "id": 38,
+                    "tags": [
+                        "utensilios",
+                        "loucas",
+                        "cozinha"
+                    ],
+                    "imagem": "./assets/produtos/produtos-utensilios-loucas-1.jpg",
+                    "titulo": "Conjunto de Louças",
+                    "descricao": "Conjunto de louças de porcelana.",
+                    "descricaoDetalhada" : "Conjunto de louças de porcelana. Esse conjunto é perfeito para quem gosta de servir com elegância e sofisticação. O design é clássico e atemporal, ideal para qualquer ocasião. O conjunto é leve e resistente. O preço é acessível e o custo-benefício é excelente. O conjunto é uma ótima opção de presente para amigos e familiares. A entrega é rápida e segura. A loja oferece garantia de satisfação e troca fácil. Aproveite essa oferta e compre agora!",
+                    "estrelas": 5,
+                    "subImg" : [
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-0.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-1.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-2.jpg",
+                        "./assets/produtos/subProdutos/utensilios/loucas-1/sub-3.jpg"
+                    ],
+                    "preco": "R$ 300,00"
                 }
             ]
         }

@@ -25,6 +25,9 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+    <!-- Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 </head>
 
 <body>
@@ -49,7 +52,7 @@
             <div class="menuMobile" aria-expanded="false"></div>
             <ul id="nav-ul">
                 <li><a href="">Home</a></li>
-                <li><a href="">Produtos</a></li>
+                <li><a href="/categorias.html">Produtos</a></li>
                 <li><a href="">Categorias</a></li>
             </ul>
         </nav>
@@ -57,32 +60,18 @@
 
     <!-- Banner -->
     <section>
-        <div class="banner">
-            <div class="carrossel">
-                <div class="carrossel-interno">
-                    <div class="carrossel-item">
-                        <img src="./assets/banner1.jpg" alt="Imagem 1">
-                    </div>
-                    <div class="carrossel-item">
-                        <img src="./assets/banner2.jpg" alt="Imagem 2">
-                    </div>
-                    <div class="carrossel-item">
-                        <img src="./assets/banner3.jpg" alt="Imagem 3">
-                    </div>
-                </div>
-                <button class="controle-carrossel anterior" onclick="slideAnterior()">
-                    <i class="fas fa-arrow-left"></i>
-                </button>
-                <button class="controle-carrossel proximo" onclick="slideProximo()">
-                    <i class="fas fa-arrow-right"></i>
-                </button>
+        <div class="banner" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 5000 }'>
+            <div class="banner-cell">
+                <img src="./assets/banner1.jpg" class="banner-img">
             </div>
-            <div class="indicadores">
-                <span class="indicador" onclick="mudarSlide(0)"></span>
-                <span class="indicador" onclick="mudarSlide(1)"></span>
-                <span class="indicador" onclick="mudarSlide(2)"></span>
+            <div class="banner-cell">
+                <img src="./assets/banner2.jpg" class="banner-img">
+            </div>
+            <div class="banner-cell">
+                <img src="./assets/banner3.jpg" class="banner-img">
             </div>
         </div>
+       
     </section>
 
     <!-- Categorias -->
@@ -366,10 +355,12 @@
 
     <!-- Carrinho Icone -->
     <section>
-        <div class="carrinhoCompras-Icone" id="carrinhoIcone">
-            <i class="fas fa-shopping-cart"></i>
+        <div class="icones">
+            <div class="carrinhoCompras-Icone" id="carrinhoIcone">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
         </div>
-    </section>
+</section>
 
     <!-- Carrinho Aside -->
     <section>
@@ -388,6 +379,10 @@
         </aside>
     </section>
 
+    <!-- Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Scripts -->
     <script src="./js/mainJS/mainProdutos.js"></script>
     <script src="./js/mainJS/header.js"></script>
     <script src="./js/mainJS/carrinhoCompras.js"></script>

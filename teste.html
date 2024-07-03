@@ -7,41 +7,40 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/mainCSS/header.css">
   <link rel="stylesheet" href="./css/mainCSS/main.css">
+  <link rel="stylesheet" href="./css/testeCSS/teste.css">
 
   <!-- fonts awnsome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <!-- Flickity CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
 </head>
 
-<body>
+<body style="background: #313131">
 
+  <div id="slider-container">
+    <div id="slider-track"></div>
+    <div id="slider-range"></div>
+    <input type="range" id="min-slider" min="0" max="100" value="20">
+    <input type="range" id="max-slider" min="0" max="100" value="80">
+  </div>
+  <div>
+    <label for="min-input">Min:</label>
+    <input type="number" id="min-input" min="0" max="100" value="20">
+    <label for="max-input">Max:</label>
+    <input type="number" id="max-input" min="0" max="100" value="80">
+  </div>
+  <p>Valor mínimo: <span id="min-value"></span></p>
+  <p>Valor máximo: <span id="max-value"></span></p>
 
-  <header>
-
-    <div class="logo">
-      <a href="">
-        <img src="./assets/LojaOnlineLogo.svg" alt="">
-      </a>
-    </div>
-
-    <div class="search">
-      <input type="text" placeholder="Pesquisar">
-      <button>
-        <i class="fas fa-search"></i>
-      </button>
-    </div>
-
-    <nav>
-      <div class="menuMobile" aria-expanded="false"></div>
-      <ul id="nav-ul">
-        <li><a href="">Home</a></li>
-        <li><a href="">Produtos</a></li>
-        <li><a href="">Categorias</a></li>
-      </ul>
-    </nav>
-  </header>
 
 
   <script src="./js/mainJS/header.js"></script>
+  <script src="./js/testeJS/teste.js"></script>
+
+  <!-- Flickity JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+
 </body>
 
 </html>
